@@ -1,0 +1,323 @@
+# Changes in this Update
+Generated on Sat Apr 12 00:58:59 CDT 2025
+
+## New and Modified Files
+ M .DS_Store
+ D app/(admin)/component-audit/data/ensure-directory.ts
+ D app/(admin)/component-audit/page.tsx
+ D app/(admin)/page.tsx
+ D app/(admin)/projects/[id]/edit/page.tsx
+ D app/(admin)/projects/new/page.tsx
+ D app/(admin)/projects/page.tsx
+ D app/(admin)/services/[id]/delete/page.tsx
+ D app/(admin)/services/[id]/edit/page.tsx
+ D app/(admin)/services/new/page.tsx
+ D app/(admin)/services/page.tsx
+ D app/(admin)/testimonials/[id]/delete/page.tsx
+ D app/(admin)/testimonials/[id]/edit/page.tsx
+ D app/(admin)/testimonials/new/page.tsx
+ D app/(admin)/testimonials/page.tsx
+ M app/README.md
+ M app/api/admin/logout/route.ts
+ M app/api/auth/signout/route.ts
+ M app/api/check-pdf-exists/route.ts
+ M app/api/deploy-hook/route.ts
+ M app/api/download-resume/route.ts
+ M app/api/faqs/[id]/route.ts
+ M app/api/faqs/route.ts
+ M app/api/feedback/route.ts
+ M app/api/fix-specific-thumbnail/route.ts
+ M app/api/generate-pdf/[slug]/route.ts
+ M app/api/process-steps/[id]/route.ts
+ M app/api/process-steps/route.ts
+ M app/api/process/[id]/route.ts
+ M app/api/process/route.ts
+ M app/api/projects/[id]/route.ts
+ M app/api/projects/route.ts
+ M app/api/revalidate-all/route.ts
+ M app/api/revalidate-images/route.ts
+ M app/api/revalidate/route.ts
+ M app/api/run-audit/route.ts
+ M app/api/services/[id]/route.ts
+ M app/api/services/route.ts
+ M app/api/test-testimonials/route.ts
+ M app/api/testimonials/[id]/route.ts
+ M app/api/testimonials/count/route.ts
+ M app/api/testimonials/featured/route.ts
+ M app/api/testimonials/route.ts
+ M app/apple-icon.tsx
+ M app/globals.css
+ M app/icon.tsx
+ M app/layout.tsx
+ M app/not-found.tsx
+ M app/opengraph-image.tsx
+ M app/page.tsx
+ M components/admin/audit-dashboard-api-update.tsx
+ M components/admin/audit-dashboard.tsx
+ M components/admin/audit-skeleton.tsx
+ M components/admin/client-project-form.tsx
+ M components/admin/code-duplication-list.tsx
+ M components/admin/component-status-list.tsx
+ M components/admin/data-table.tsx
+ M components/admin/delete-faq-button.tsx
+ M components/admin/delete-process-step-button.tsx
+ M components/admin/delete-service-button.tsx
+ M components/admin/faq-form.tsx
+ M components/admin/faqs-list.tsx
+ M components/admin/form/form-button.tsx
+ M components/admin/form/form-field.tsx
+ M components/admin/general-image-uploader.tsx
+ M components/admin/health-score.tsx
+ M components/admin/image-gallery.tsx
+ M components/admin/image-uploader.tsx
+ M components/admin/implementation-checklist.tsx
+ M components/admin/layout/admin-layout.tsx
+ M components/admin/layout/admin-sidebar.tsx
+ M components/admin/login-form.tsx
+ M components/admin/logout-button.tsx
+ M components/admin/process-form.tsx
+ M components/admin/process-step-form.tsx
+ M components/admin/process-steps-list.tsx
+ M components/admin/project-form-wrapper.tsx
+ M components/admin/project-form.tsx
+ M components/admin/project-image-editor.tsx
+ M components/admin/project-list.tsx
+ M components/admin/service-form.tsx
+ M components/admin/services-list.tsx
+ M components/admin/sidebar.tsx
+ M components/admin/simple-login-form.tsx
+ M components/admin/supabase-debug-client.tsx
+ M components/admin/testimonial-form.tsx
+ M components/admin/testimonial-list.tsx
+ M components/admin/unused-components-list.tsx
+ M components/admin/unused-dependencies-list.tsx
+ M components/index.tsx
+ M components/layout/page-footer-nav-wrapper.tsx
+ M components/layout/page-footer-nav.tsx
+ M components/layout/skip-to-content.tsx
+ M components/providers/loader-provider.tsx
+ M components/providers/search-params-provider.tsx
+ M components/providers/toast-provider.tsx
+ M components/sections/common/about-cta.tsx
+ M components/sections/common/hero-showcase-wrapper.tsx
+ M components/sections/common/hero-showcase.tsx
+ M components/sections/common/hero-testimonial-section.tsx
+ M components/sections/common/hero-testimonial.tsx
+ M components/sections/common/hero-testimonials.tsx
+ M components/sections/common/home-cta.tsx
+ M components/sections/common/home-hero.tsx
+ M components/sections/common/process-cta.tsx
+ M components/sections/common/testimonials-cta.tsx
+ M components/sections/common/work-cta.tsx
+ M components/sections/home/featured-projects.tsx
+ M components/sections/home/hero-showcase.tsx
+ M components/sections/home/home-hero.tsx
+ M components/sections/home/process-overview.tsx
+ M components/sections/home/service-overview.tsx
+ M components/sections/home/success-stories.tsx
+ M components/shared/accessible-accordion.tsx
+ M components/shared/accessible-modal.tsx
+ M components/shared/accessible-tabs.tsx
+ M components/shared/accessible-toast.tsx
+ M components/shared/cta-section.tsx
+ M components/shared/faq-section.tsx
+ M components/shared/form-field.tsx
+ M components/shared/image-card.tsx
+ M components/shared/image-with-fallback.tsx
+ M components/shared/keyboard-nav.tsx
+ M components/shared/lazy-image-wrapper.tsx
+ M components/shared/lazy-image.tsx
+ M components/shared/page-header.tsx
+ M components/shared/responsive-image.tsx
+ M components/shared/screen-reader-announce.tsx
+ M components/shared/section-heading.tsx
+ M components/shared/skip-navigation.tsx
+ M components/shared/skip-to-content.tsx
+ M components/shared/supabase-image.tsx
+ M components/shared/tag-list.tsx
+ M components/ui/advanced-loader.tsx
+ M components/ui/badge.tsx
+ M components/ui/calendar.tsx
+ M components/ui/carousel.tsx
+ M components/ui/chart.tsx
+ M components/ui/image.tsx
+ M components/ui/input-otp.tsx
+ M components/ui/link.tsx
+ M components/ui/loading-fallbacks.tsx
+ M components/ui/loading-projects.tsx
+ M components/ui/page-loader.tsx
+ M components/ui/placeholder.tsx
+ M components/ui/resizable.tsx
+ M components/ui/section-header.tsx
+ M components/ui/sidebar.tsx
+ M components/ui/skeleton.tsx
+ M components/ui/sonner.tsx
+ M components/ui/toaster.tsx
+ M components/ui/tooltip.tsx
+ M components/ui/typography.tsx
+ M components/ui/use-toast.ts
+ M hooks/use-media-query.ts
+ M hooks/use-mobile-viewport.tsx
+ M hooks/use-responsive.ts
+ M hooks/use-toast.ts
+ M lib/auth.ts
+ M lib/check-schema.ts
+ M lib/client-projects.ts
+ M lib/data/contact.ts
+ M lib/data/faqs.ts
+ M lib/data/feedback.ts
+ M lib/data/pages-projects.ts
+ M lib/data/process-steps.ts
+ M lib/data/process.ts
+ M lib/data/projects.ts
+ M lib/data/sample-quiz.ts
+ M lib/data/services.ts
+ M lib/data/subscriptions.ts
+ M lib/data/testimonials.ts
+ M lib/env-validation.ts
+ M lib/monitoring.ts
+ M lib/navigation.ts
+ M lib/organization/component-consolidation-examples.ts
+ M lib/organization/implementation-script.ts
+ M lib/organization/migration-strategy.ts
+ M lib/organization/refactoring-examples.ts
+ M lib/page-config.ts
+ M lib/revalidation.ts
+ M lib/static-pdf-generator.ts
+ M lib/storage.ts
+ M lib/supabase-queries.ts
+ M lib/supabase/browser.ts
+ M lib/supabase/client.ts
+ M lib/supabase/middleware.ts
+ M lib/supabase/pages-client.ts
+ M lib/supabase/server.ts
+ M lib/utils.ts
+ M lib/utils/accessibility.ts
+ M lib/utils/color-contrast.ts
+ M lib/utils/dynamic-import.ts
+ M lib/utils/fetch-helpers.ts
+ M lib/utils/focus-trap.ts
+ M lib/utils/format-string.ts
+ M lib/utils/image-debug.ts
+ M lib/utils/process-array-data.ts
+ M lib/utils/project-helpers.ts
+ M lib/utils/responsive.ts
+ M lib/utils/supabase-helpers.ts
+ M package-lock.json
+ M package.json
+ M public/about.html
+ M public/admin/component-audit/data/latest-audit.json
+ M types/database.types
+ M types/database.types.ts
+ M types/faq.ts
+ M types/faqs.ts
+ M types/global.d.ts
+ M types/process-step.ts
+ M types/process-steps.ts
+ M types/process.ts
+ M types/quiz.ts
+ M types/service.ts
+ M types/services.ts
+ M types/supabase.ts
+ M types/testimonial.ts
+ M types/testimonials.ts
+?? app/about/
+?? app/actions/
+?? app/admin/
+?? app/bypass/
+?? app/components/
+?? app/contact/
+?? app/debug/
+?? app/design-system/
+?? app/faqs/
+?? app/login-test/
+?? app/playground/
+?? app/process/
+?? app/resume/
+?? app/services/
+?? app/supabase-test/
+?? app/test-images/
+?? app/test-page/
+?? app/test-pdf/
+?? app/test-resume-download/
+?? app/testimonials/
+?? app/typography-example/
+?? app/work/
+?? changelog-20250411.md
+?? cleanup-branches.sh
+?? components/about/
+?? components/active-visitors.tsx
+?? components/browser-mockup.tsx
+?? components/client-problems.tsx
+?? components/contact/
+?? components/debug/
+?? components/error-boundary.tsx
+?? components/featured-projects.tsx
+?? components/feedback-modal-fallback.tsx
+?? components/feedback-modal.tsx
+?? components/footer.tsx
+?? components/footer/
+?? components/header/
+?? components/health-progress-tracker.tsx
+?? components/hero-showcase-wrapper.tsx
+?? components/home-page-content.tsx
+?? components/home/
+?? components/layout/footer/
+?? components/layout/header/
+?? components/main-nav.tsx
+?? components/mobile-nav.tsx
+?? components/mode-toggle.tsx
+?? components/nav.tsx
+?? components/process/
+?? components/project-card.tsx
+?? components/project-grid.tsx
+?? components/project-nav.tsx
+?? components/projects/
+?? components/quiz/
+?? components/recharts-wrapper.tsx
+?? components/section-header.tsx
+?? components/services/
+?? components/shared/static-image.tsx
+?? components/site-footer.tsx
+?? components/testimonial-card.tsx
+?? components/testimonials-section.tsx
+?? components/testimonials.tsx
+?? components/testimonials/
+?? components/theme-provider.tsx
+?? components/timeline.tsx
+?? components/timeline/
+?? components/work/
+?? dependency-report-20250411.md
+?? docs/.DS_Store
+?? docs/01-project-requirements.md
+?? docs/02-application-user-flow.md
+?? docs/03-tech-stack.md
+?? docs/04-frontend-guidelines.md
+?? docs/05-backend-structure.md
+?? docs/06-directory-structure.md
+?? docs/07-pre-deployment-checklist.md
+?? docs/08-environment-variables.md
+?? docs/09-design-system.md
+?? docs/10-database-schema.md
+?? docs/11-site-configuration.md
+?? lib/data/client-projects.ts
+?? lib/data/index.ts
+?? lib/faqs.ts
+?? lib/image-optimization.ts
+?? lib/process-steps.ts
+?? lib/process.ts
+?? lib/projects.ts
+?? lib/services.ts
+?? lib/supabase-client.ts
+?? lib/supabase.ts
+?? lib/supabase/client-browser.ts
+?? lib/supabase/client-utils.ts
+?? lib/supabase/clients.ts
+?? lib/supabase/index.ts
+?? lib/testimonials.ts
+?? pre-deployment-checks-20250411.md
+?? scripts/fix-route-groups-revised.sh
+?? scripts/fix-route-groups.sh
+
+## Dependency Changes
+No new dependencies added.

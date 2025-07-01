@@ -1,0 +1,48 @@
+import Link from "next/link"
+import Image from "next/image"
+import { ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+interface Project {
+  id: string
+  title: string
+  description: string
+  tags: string[]
+  thumbnailUrl: string
+  slug: string
+}
+
+interface ProjectCardProps {
+  project: Project
+}
+
+export default function ProjectCard({ project }: ProjectCardProps) {
+  return (
+    <div className="group border rounded-lg overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg hover:border-purple-300 dark:hover:border-purple-700">
+      <div className="relative aspect-video overflow-hidden">
+        <Image
+          src={project.thumbnailUrl || "/placeholder.svg"}
+          alt={project.title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <div className="flex-1 p-6 flex flex-col">
+        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+        <p className="text-muted-foreground mb-4 flex-1">{project.description}</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tags.map((tag, index) => (
+            <span key={index} className="bg-muted px-2 py-1 rounded-full text-xs">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <Button asChild variant="ghost" className="justify-start p-0 hover:bg-transparent">
+          <Link href={`/work/${project.slug}`} className="flex items-center text-primary">
+            View Project <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
+    </div>
+  )
+}

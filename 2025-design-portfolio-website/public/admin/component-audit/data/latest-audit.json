@@ -1,0 +1,98 @@
+{
+  "timestamp": "2025-03-30T14:30:00.000Z",
+  "summary": {
+    "unusedComponentsCount": 3,
+    "unusedDependenciesCount": 2,
+    "duplicationPercentage": 4.5,
+    "healthScore": 87,
+    "standardizedCount": 4,
+    "totalComponents": 5
+  },
+  "details": {
+    "unusedComponents": [
+      {
+        "path": "components/legacy/old-button.tsx",
+        "name": "OldButton",
+        "type": "Component",
+        "status": "Unused"
+      },
+      {
+        "path": "components/experimental/fancy-card.tsx",
+        "name": "FancyCard",
+        "type": "Component",
+        "status": "Unused"
+      },
+      {
+        "path": "components/utils/deprecated-helper.tsx",
+        "name": "DeprecatedHelper",
+        "type": "Utility",
+        "status": "Unused"
+      }
+    ],
+    "unusedDependencies": [
+      {
+        "name": "moment",
+        "type": "date",
+        "status": "Unused",
+        "devDependency": false
+      },
+      {
+        "name": "lodash",
+        "type": "utility",
+        "status": "Partially Used",
+        "devDependency": false
+      }
+    ],
+    "duplications": [
+      {
+        "sourceFile": "components/project-card.tsx",
+        "targetFile": "components/blog-card.tsx",
+        "lines": 24,
+        "tokens": 156
+      },
+      {
+        "sourceFile": "lib/utils.ts",
+        "targetFile": "lib/helpers.ts",
+        "lines": 12,
+        "tokens": 78
+      }
+    ],
+    "componentStatus": [
+      {
+        "name": "Button",
+        "location": "@/components/ui/button.tsx",
+        "status": "Standardized",
+        "usageCount": 24,
+        "notes": "All variants implemented"
+      },
+      {
+        "name": "Card",
+        "location": "@/components/ui/card.tsx",
+        "status": "Needs Review",
+        "usageCount": 12,
+        "notes": "Missing hover states"
+      },
+      {
+        "name": "Typography",
+        "location": "@/components/ui/typography.tsx",
+        "status": "Standardized",
+        "usageCount": 35,
+        "notes": "Complete"
+      },
+      {
+        "name": "ImageCard",
+        "location": "@/components/shared/image-card.tsx",
+        "status": "Standardized",
+        "usageCount": 8,
+        "notes": "Responsive behavior needs testing"
+      },
+      {
+        "name": "FormField",
+        "location": "@/components/shared/form-field.tsx",
+        "status": "Standardized",
+        "usageCount": 6,
+        "notes": "Validation states implemented"
+      }
+    ]
+  }
+}

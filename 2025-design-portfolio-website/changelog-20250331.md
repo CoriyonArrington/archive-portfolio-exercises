@@ -1,0 +1,240 @@
+# Changes in this Update
+Generated on Mon Mar 31 18:13:20 CDT 2025
+
+## New and Modified Files
+ M .DS_Store
+ M app/about/about-page-client.tsx
+ M app/actions/faq-actions.ts
+ M app/actions/process-step-actions.ts
+ M app/actions/service-actions.ts
+ M app/actions/subscribe-to-projects.ts
+ M app/admin/actions/create-process-step.ts
+ M app/admin/actions/delete-process-step.ts
+ M app/admin/actions/process-step-actions.ts
+ M app/admin/actions/update-process-step.ts
+ M app/admin/api-debug/page.tsx
+ M app/admin/auth-debug/page.tsx
+ M app/admin/check-paths/page.tsx
+ M app/admin/check-schema/page.tsx
+ M app/admin/dashboard/page.tsx
+ M app/admin/debug/client/page.tsx
+ M app/admin/debug/page.tsx
+ M app/admin/debug/supabase/page.tsx
+ M app/admin/faqs/[id]/delete/page.tsx
+ M app/admin/faqs/[id]/edit/page.tsx
+ M app/admin/faqs/new/page.tsx
+ M app/admin/faqs/page.tsx
+ M app/admin/login/page.tsx
+ M app/admin/logout/page.tsx
+ M app/admin/page.tsx
+ M app/admin/process-steps/[id]/delete/page.tsx
+ M app/admin/process-steps/[id]/edit/edit-process-step-client.tsx
+ M app/admin/process-steps/[id]/edit/page.tsx
+ M app/admin/process-steps/new/new-process-step-client.tsx
+ M app/admin/process-steps/new/page.tsx
+ M app/admin/process-steps/page.tsx
+ M app/admin/process/[id]/delete/page.tsx
+ M app/admin/process/[id]/edit/page.tsx
+ M app/admin/process/create-table/page.tsx
+ M app/admin/process/new/page.tsx
+ M app/admin/process/page.tsx
+ M app/admin/projects-debug/page.tsx
+ M app/admin/projects/[id]/edit/page.tsx
+ M app/admin/projects/new/page.tsx
+ M app/admin/projects/page.tsx
+ M app/admin/revalidate/page.tsx
+ M app/admin/services/[id]/delete/page.tsx
+ M app/admin/services/[id]/edit/page.tsx
+ M app/admin/services/new/page.tsx
+ M app/admin/services/page.tsx
+ M app/admin/supabase-connection-test/page.tsx
+ M app/admin/supabase-debug/page.tsx
+ M app/admin/testimonials/[id]/delete/page.tsx
+ M app/admin/testimonials/[id]/edit/page.tsx
+ M app/admin/testimonials/new/page.tsx
+ M app/admin/testimonials/page.tsx
+ M app/api/delete-test-projects/route.ts
+ M app/api/deploy-hook/route.ts
+ M app/api/deploy/route.ts
+ M app/api/faqs/[id]/route.ts
+ M app/api/faqs/route.ts
+ M app/api/nuclear-revalidate/route.ts
+ M app/api/process-steps/[id]/route.ts
+ M app/api/process-steps/route.ts
+ M app/api/process/[id]/route.ts
+ M app/api/process/route.ts
+ M app/api/projects/[id]/route.ts
+ M app/api/projects/route.ts
+ M app/api/revalidate-deletion/route.ts
+ M app/api/revalidate/deletions/route.ts
+ M app/api/revalidate/nuclear/route.ts
+ M app/api/revalidate/rebuild/route.ts
+ M app/api/revalidate/route.ts
+ M app/api/services/[id]/route.ts
+ M app/api/services/route.ts
+ M app/api/testimonials/[id]/route.ts
+ M app/api/testimonials/count/route.ts
+ M app/api/testimonials/featured/route.ts
+ M app/api/testimonials/route.ts
+ M app/debug/featured/page.tsx
+ M app/debug/home-projects/page.tsx
+ M app/debug/image/page.tsx
+ M app/debug/projects/page.tsx
+ M app/debug/supabase/page.tsx
+ M app/debug/testimonials/page.tsx
+ M app/faqs/page.tsx
+ M app/page.tsx
+ M app/process/page.tsx
+ M app/services/components/services-page-content.tsx
+ M app/testimonials/page.tsx
+ M app/work/[slug]/page.tsx
+ M app/work/page.tsx
+ M components/admin/client-project-form.tsx
+ M components/admin/data-table.tsx
+ M components/admin/delete-faq-button.tsx
+ M components/admin/delete-process-step-button.tsx
+ M components/admin/delete-service-button.tsx
+ M components/admin/faq-form.tsx
+ M components/admin/faqs-list.tsx
+ M components/admin/form/form-button.tsx
+ M components/admin/form/form-field.tsx
+ M components/admin/layout/admin-sidebar.tsx
+ M components/admin/process-form.tsx
+ M components/admin/process-step-form.tsx
+ M components/admin/process-steps-list.tsx
+ M components/admin/project-form-wrapper.tsx
+ M components/admin/project-form.tsx
+ M components/admin/project-list.tsx
+ M components/admin/service-form.tsx
+ M components/admin/services-list.tsx
+ M components/admin/sidebar.tsx
+ M components/admin/supabase-debug-client.tsx
+ M components/admin/testimonial-form.tsx
+ M components/admin/testimonial-list.tsx
+ M components/debug/testimonial-debug.tsx
+ M components/footer/footer-nav.tsx
+ M components/footer/index.tsx
+ M components/header/index.tsx
+ M components/header/mobile-nav.tsx
+ M components/header/nav-links.tsx
+ M components/home-page-content.tsx
+ M components/home/featured-projects.tsx
+ M components/home/featured-testimonials-server.tsx
+ M components/home/featured-testimonials-wrapper.tsx
+ M components/home/featured-testimonials.tsx
+ M components/home/project-card.tsx
+ M components/home/success-stories.tsx
+ M components/home/testimonial-avatars.tsx
+ M components/home/testimonial-card.tsx
+ M components/home/testimonial-grid.tsx
+ M components/home/testimonial-preview.tsx
+ M components/home/testimonial-section.tsx
+ M components/home/testimonials.tsx
+ M components/layout/footer/footer-nav.tsx
+ M components/layout/footer/footer-wrapper.tsx
+ M components/layout/footer/index.tsx
+ M components/layout/header/index.tsx
+ M components/layout/header/mobile-nav.tsx
+ M components/layout/header/nav-links.tsx
+ M components/process/process-case-studies.tsx
+ M components/process/process-cta.tsx
+ M components/process/process-faq.tsx
+ M components/process/process-hero.tsx
+ M components/process/process-overview.tsx
+ M components/process/process-steps.tsx
+ M components/project-card.tsx
+ M components/projects/featured-projects.tsx
+ M components/projects/notification-modal.tsx
+ M components/projects/project-card.tsx
+ M components/projects/project-grid.tsx
+ M components/projects/project-process-section.tsx
+ M components/services/service-offerings.tsx
+ M components/services/service-solutions.tsx
+ M components/services/services-faq.tsx
+ M components/shared/cta-section.tsx
+ M components/shared/faq-section.tsx
+ M components/shared/form-field.tsx
+ M components/shared/image-card.tsx
+ M components/shared/section-heading.tsx
+ M components/testimonial-card.tsx
+ M components/testimonials-section.tsx
+ M components/testimonials.tsx
+ M components/testimonials/testimonial-card.tsx
+ M components/testimonials/testimonials-content.tsx
+ M components/ui/typography.tsx
+ M components/work/projects-grid.tsx
+ M lib/check-schema.ts
+ M lib/client-projects.ts
+ M lib/data/contact.ts
+ M lib/data/faqs.ts
+ M lib/data/feedback.ts
+ M lib/data/index.ts
+ M lib/data/pages-projects.ts
+ M lib/data/process.ts
+ M lib/data/projects.ts
+ M lib/data/services.ts
+ M lib/data/subscriptions.ts
+ M lib/data/testimonials.ts
+ M lib/monitoring.ts
+ M lib/process-steps.ts
+ M lib/projects.ts
+ M lib/revalidation.ts
+ M lib/services.ts
+ M lib/supabase/browser.ts
+ M lib/supabase/client-browser.ts
+ M lib/supabase/client.ts
+ M lib/supabase/clients.ts
+ M lib/supabase/pages-client.ts
+ M lib/supabase/server.ts
+ M lib/utils.ts
+ M lib/utils/project-helpers.ts
+ M package-lock.json
+ M package.json
+ M types/database.types
+ M types/database.types.ts
+ M types/faqs.ts
+ M types/process-steps.ts
+ M types/process.ts
+ M types/project.ts
+ M types/service.ts
+ M types/services.ts
+ M types/testimonial.ts
+?? app/admin/component-audit/
+?? app/admin/design-system/
+?? app/admin/process/create-table/process-phases.sql
+?? app/api/revalidate-all/
+?? app/api/run-audit/
+?? app/debug/page.tsx
+?? app/design-system/
+?? app/playground/
+?? components/admin/audit-dashboard-api-update.tsx
+?? components/admin/audit-dashboard.tsx
+?? components/admin/audit-skeleton.tsx
+?? components/admin/code-duplication-list.tsx
+?? components/admin/component-status-list.tsx
+?? components/admin/health-score.tsx
+?? components/admin/implementation-checklist.tsx
+?? components/admin/unused-components-list.tsx
+?? components/admin/unused-dependencies-list.tsx
+?? components/footer.tsx
+?? components/layout/page-footer-nav-wrapper.tsx
+?? components/layout/page-footer-nav.tsx
+?? components/main-nav.tsx
+?? components/mobile-nav.tsx
+?? components/nav.tsx
+?? components/project-grid.tsx
+?? components/quiz/
+?? components/site-footer.tsx
+?? components/ui/section-header.tsx
+?? components/work/project-grid.tsx
+?? lib/data/client-projects.ts
+?? lib/data/process-steps.ts
+?? lib/data/sample-quiz.ts
+?? lib/navigation.ts
+?? lib/supabase/index.ts
+?? public/admin/
+?? types/process-step.ts
+?? types/quiz.ts
+
+## Dependency Changes
+No new dependencies added.
