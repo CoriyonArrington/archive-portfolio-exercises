@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171395181-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171395181-1');
+    </script>
+
+    <!-- Device Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Coriyon Arrington | Portfolio</title>
+
+    <!-- Social Media -->
+    <meta property='og:title' content="Coriyon Arrington's Portfolio"/>
+    <meta property='og:image' content="../images/link-share.png"/>
+    <meta property="og:description" content="UX Designer based in Austin who loves clean, elegant, and practical designs."/>
+    <meta property="og:url"content="https://coriyon.com/"/>
+
+    <!-- Favicons -->
+    <link href="../images/avatar.png" rel="icon">
+    <link href="../images/avatar.png" rel="apple-touch-icon">
+
+    <!-- Canonical Links -->
+    <link rel="canonical" href="../about">
+    <link rel="canonical" href="../work">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Script Files -->
+    <script src="https://kit.fontawesome.com/58e13ba0ad.js" crossorigin="anonymous"></script>
+    <script src="../scripts/main.js" defer></script>
+
+</head>
+<body id="project-page" onscroll="bodyScroll();">
+
+    <!-- this is the page container -->
+    <div class="container">
+
+        <!-- this is the desktop nav -->
+        <header class="desktop-nav">
+            <nav class="desktop-menu">
+                <a href="../"><img class="desktop-avatar" src="../images/avatar.png" alt="avatar"></a>
+                <a href="../#work">Work</a>
+                <a href="../about">About</a>
+                <a href="../#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- this is the mobile nav -->
+        <header class="mobile-nav">
+            <div class="mobile-nav-wrapper">
+                <a href="../">
+                    <img class="mobile-avatar" src="../images/avatar.png" alt="avatar">
+                </a>
+                <a href="javascript:void(0);" onclick="openProject()" aria-label="project menu button" tabindex="0" aria-label="down arrow">
+                    <span id="chevron" class="fas fa-chevron-down fa-2x"></span>
+                </a> 
+                <a href="javascript:void(0);" onclick="openMenu()" aria-label="menu button" tabindex="0">
+                    <span id="menu-btn" class="fas fa-bars fa-3x"></span>
+                </a>
+            </div> 
+        </header>
+        <nav id="overlay">
+            <a href="javascript:void(0);" onclick="closeMenu()" aria-label="close button" tabindex="0">
+                <span id="close-btn" class="far fa-window-close fa-3x"></span>
+            </a>
+            <div class="overlay-content">
+                <a href="../#work">Work</a>
+                <a href="../about">About</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div class="social-media">
+                <ul class="social-media-icons">
+                    <li>
+                        <a href="mailto:coriyonarrington@gmail.com" aria-label="Email"><span class="far fa-paper-plane fa-3x"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/coriyonarrington/" aria-label="LinkedIn"><span class="fab fa-linkedin fa-3x"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CoriyonArrington" aria-label="GitHub"><span class="fab fa-github fa-3x"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="project">
+            <a href="javascript:void(0);" onclick="closeProject()" aria-label="close button" tabindex="0">
+                <span id="close-pro-btn" class="far fa-window-close fa-2x"></span>
+            </a>
+            <div class="project-content" onclick="closeProject()">
+                <a id="menu-summary" href="#summary">Summary</a>
+                <a id="menu-discovery" href="#discovery-research">Discovery & Research</a>
+                <a id="menu-info" href="#information-architecture">Information Architecture</a>
+                <a id="menu-visual" href="#visual-design">Visual Design</a>
+                <a id="menu-proto" href="#prototype-solution">Prototype</a>
+            </div>
+        </nav>
+        
+        <!-- this is the main content -->
+        <main>
+            <!-- the summary section -->
+            <section id="summary" class="project summary">
+                <h2>Summary</h2>
+                <p>
+                    Eclips Storage allows users to easily save, organize, and share all their favorite content like GIFs and videos.
+                </p>
+                <img src="../images/case-study-example-3.png" alt="app screenshots">
+                <a href="https://www.figma.com/proto/FJ9Vb8gAfj0sWk7hQT8lwo/UX-Intensive?node-id=180%3A945&viewport=62%2C365%2C0.021977005526423454&scaling=scale-down&hide-ui=1" aria-label="prototype">
+                    <button type="button">View Prototype</button>
+                </a>
+                <div class="summary-actions">
+                    <div class="summary-role">
+                        <h3>Role</h3>
+                        <ul>
+                            <li>UX Design</li>
+                            <li>Visual Design</li>
+                            <li>Brand & Identity</li>
+                        </ul>
+                    </div>
+                    <div class="summary-deliverables">
+                        <h3>Deliverables</h3>
+                        <ul>
+                            <li>User Surveys</li>
+                            <li>User Personas</li>
+                            <li>Competitve Analysis</li>
+                            <li>Brand Identity</li>
+                            <li>User Stories & Flows</li>
+                            <li>Wireframes</li>
+                            <li>Usability Testing</li>
+                            <li>Low-Fi Mockups</li>
+                        </ul>
+                    </div>
+                    <div class="summary-specs">
+                        <h3>Specifications</h3>
+                        <ul>
+                            <li>6 weeks</li> 
+                            <li>Figma</li>
+                            <li>InVision</li>
+                            <li>Whimsical</li>
+                            <li>Typeform</li>
+                            <li>Xtensio</li>
+                            <li>Maze</li>
+                            <li>Usability Hub</li>
+                        </ul>
+                    </div>
+                </div> 
+            </section>
+
+            <!-- the problem section -->
+            <section class="project problem">
+                <h2>The Problem</h2>
+                <p>
+                    Most people have personal content stored in several places. They need a dedicated space to easily save, organize, and share their content. 
+                </p>
+            </section>
+
+            <!-- the solution section -->
+            <section class="project solution">
+                <h2>The Solution</h2>
+                <p>
+                    Eclips Storage allows users to quickly save, organize, and share all of their favorite content in one place.
+                </p>
+                <img src="../images/case-study-example-2.png" alt="app screenshots">
+                <a href="https://www.figma.com/proto/FJ9Vb8gAfj0sWk7hQT8lwo/UX-Intensive?node-id=180%3A945&viewport=62%2C365%2C0.021977005526423454&scaling=scale-down&hide-ui=1" aria-label="prototype">
+                    <button type="button">View Prototype</button>
+                </a>
+            </section>
+
+            <!-- the process section -->
+
+            <!-- discovery & research -->
+            <section id="discovery-research" class="project discovery">
+                <h2>Discovery & Research</h2>
+                <h3>User Survey</h3>
+                <p>
+                    I decided to start out the journey by creating a user survey because I wanted to figure out what features users prefer most in their cloud storage app and what features they would mainly use.
+                </p>
+                <p>
+                    This helped me to see that most people use more than one app likely because they use them for different purposes. More importantly, it helped me prioritize what features to include for a minimum viable prototype - mobile upload & sharing an item. 
+                </p>
+                <div class="survey-results">
+                    <img src="../images/cloud-storage-features.png" alt="cloud storage features">
+                    <img src="../images/cloud-storage-use.png" alt="cloud storage use">
+                    <img src="../images/cloud-storage-apps.png" alt="cloud storage apps">
+                </div>
+                <a href="https://docs.google.com/document/d/1kkZdcfhDnmd6tiOVrFNEeEgXDil3y8FjTZzF75vhh1c/edit?usp=sharing" aria-label="survey analysis">
+                    <button type="button">View Analysis</button>
+                </a>   
+            </section>
+
+            <!-- competitve analysis -->
+            <section class="project comp">
+                <h3>Competitive Analysis</h3>
+                <p>
+                    From there, I decided to take a deeper look at what people were already using because I wanted to understand why they chose those particular apps. I also wanted to get a better idea of how to implement those two main features, mobile upload and sharing an item. Based on the survey, most people were using Google Drive, Dropbox, and iCloud so I chose to start there. 
+                </p>
+                <p>
+                    I noticed that Google Drive and Dropbox placed the add button somewhere near the bottom on mobile devices and on top for the web. I figured they have done a ton of research already and my final design would most likely have similar button placement. However, they differed in how users shared files. Google Drive had a shared button on the tab bar whereas Dropbox users needed to click into files in order to share. This made me consider the possibility of making that process more efficient and streamlined.
+                </p>
+                <div class="comp-analysis">
+                    <img src="../images/google-drive.png" alt="Google Drive">
+                    <img src="../images/dropbox.png" alt="Dropbox">
+                    <img src="../images/icloud.png" alt="iCloud">
+                    <h4>Google Drive</h4>
+                    <h4>Dropbox</h4>
+                    <h4>iCloud</h4>
+                </div>
+                <a href="https://coriyonarrington.xtensio.com/98vyfqqt" aria-label="competitive analysis">
+                    <button type="button">View Analysis</button>
+                </a>  
+            </section>
+
+            <!-- user personas -->
+            <section class="project personas">
+                <h3>User Personas</h3>
+                <p>
+                    User-focused design is all about remembering the user at each step in the design process. So, I curated three users personas based on the audience from the survey and competitors. The personas brought the user to life and I referred back to them as I was designing the app.
+                </p>
+                <div class="user-personas">
+                    <img src="../images/persona-tanya.png" alt="user persona">
+                    <img src="../images/persona-josh.png" alt="user persona">
+                    <img src="../images/persona-morgan.png" alt="user persona">
+                    <h4>Tanya</h4>
+                    <h4>Josh</h4>
+                    <h4>Morgan</h4>
+                </div>
+                <a href="https://coriyonarrington.xtensio.com/zsqib08d" aria-label="user personas">
+                    <button type="button">View Personas</button>
+                </a> 
+            </section>
+
+            <!-- information architecture -->
+
+            <!-- user stories -->
+            <section id="information-architecture" class="project stories">
+                <h2>Information Architecture</h2>
+                <h3>User Stories</h3>
+                <p>
+                    They say you should never start building without having a blueprint. So, I decided to complete some user stories so I could have a clear idea of all the actions that a user would go through. I used the data from the survey and the goals from the personas to find help me prioritize them. 
+                </p>
+                <p>
+                    I prioritized them this way because doing so helped me to efficiently create the minimum viable prototype. 
+                </p>
+                <div class="user-stories-list">
+                    <ol>
+                        <li>As a new user I want to create an account</li>
+                        <li>As a new user I want to upload images</li>
+                        <li>As a new user I want to share items by sending a link</li>
+                        <li>As a returning user I want to see my files </li>
+                        <li>As a returning user I want to edit items</li>
+                        <li>As a returning user I want to see available free space</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- user flows -->
+            <section class="project flows">
+                <h3>User Flows</h3>
+                <p>
+                    Streamlining the user process was important because it would lead to a better experience. So next I completed user flows. I made sure to include all of the high priority items such as creating the account and uploading a new image. I wanted to make the process for going through those steps as easy as possible. So, again, I referred back to the competitive analysis to get an idea of what users were familiar with and tighten the gaps.
+                </p>
+                <img src="../images/user-flows.png" alt="user-flows">
+                <a href="https://whimsical.com/RDxYQ91ia7GC6SeUd8rEUd#7YNFXnKbYtnysZsY9NLvG" aria-label="user flows">
+                    <button type="button">View Flows</button>
+                </a> 
+            </section>
+
+            <!-- digital wireframes -->
+            <section class="project wireframes">
+                <h3>Digital Wireframes</h3>
+                <p>
+                    Once the user flows were complete, it was time to start exploring the design. I went to the drawing board and got to work. The survey results showed me that more people preferred uploading from mobile versus computer. So, I decided to design for mobile first.
+                </p>
+                <p>
+                    I chose to focus on a few key areas in the design: the tab bar, the add button, and seeing files visually. For the tab bar, I wanted the user to quickly access the features they use most such as searching for a file and sharing a file. So, I decided to include them in a place where they will always see those options - the tab bar.
+        Given that users want to add files quickly, I chose to place the add button at the top of the screen where they could see it first.
+                </p>
+                <p>
+                    Lastly, I focused on ways that users could see their files visually. I decided to have two places, the top where they could slide through recents and the body where they could see albums.
+                </p>
+                <img src="../images/digital-wireframes.png" alt="digital wireframes">
+                <a href="https://invis.io/ZAWW06X7E6R" aria-label="digital wireframe prototype">
+                    <button type="button">Wireframe Prototype</button>
+                </a> 
+            </section>
+
+            <!-- visual design -->
+
+            <!-- brand characteristics -->
+            <section id="visual-design" class="project brand">
+                <h2>Visual Design</h2>
+                <h3>Brand Characteristics</h3>
+                <p>
+                    Eclips Storage was inspired by modern looks from other designers. The goal is to have the users perceive the product as modern. The rest of the guidelines below will show how modern aspects are used to achieve this goal such as the use of tan accents colors often found in modern interior design. 
+                </p>
+                <img src="../images/moodboard.png" alt="moodboard">
+                <a href="https://www.figma.com/proto/FJ9Vb8gAfj0sWk7hQT8lwo/UX-Intensive?node-id=585%3A21716&viewport=1786%2C1156%2C0.08784467726945877&scaling=scale-down-width" aria-label="digital brand style guide">
+                    <button type="button">View Style Guide</button>
+                </a> 
+            </section>
+
+            <!-- color palette -->
+            <section class="project colo">
+                <p>
+                    Dark orange and dark cyan are the main colors of Eclips Storage. Orange is a color that invokes a feeling of happiness and is associated with joy, happiness, and creativity. Blue represents confidence, intelligence, trust, and loyalty. All of which are important when it comes to saving personal files somewhere that can’t be seen. The goal is to have users trust the brand while enjoying the process of using its product. The accent colors were chosen because they are often found in modern interior design. The use of the lighter accent colors helps the primary colors to pop while not clashing. 
+                </p>
+                <img src="../images/color-palette.png" alt="color palette">
+            </section>
+
+            <!-- typography -->
+            <section class="project type">
+                <h3>Typography</h3>
+                <p>
+                    Outerorbit was chosen as the brand typeface and Quicksand was chosen to complement it as the main text. They were selected because they are a great combination of the older font styles that come to mind when thinking of cloud storage and a more modern look as well. The goal is to feel familiar while also standing out.
+                </p>
+            </section>
+
+            <!-- logo design and process -->
+            <section class="project logo">
+                <h3>Logo Design& Process</h3>
+                <p>
+                    The logo was designed with beauty of simplicity in mind. It reflects that with the use of some basic shapes and the brand name. 
+                </p>
+                <img src="../images/logo-black-bg.png" alt="logo example">
+            </section>
+
+            <!-- protoype -->
+            <section id="prototype-solution" class="project prototype">
+                <h2>Prototype</h2>
+                <p>
+                    Eclips Storage went through a few rounds of user testing.  I decided to test once the digital wireframes were complete because I was looking for any major design changes that needed to be corrected before spending more time on it. I asked users to test it by trying to complete the following actions:
+                </p>
+                <div class="prototype-list">
+                    <ol>
+                        <li>Create an account</li>
+                        <li>Add some content</li>
+                        <li>Organize the content</li>
+                        <li>Share the content</li>
+                        <li>Sign out of the account</li>
+                    </ol>
+                </div>
+                <p>
+                    It revealed some areas that needed to be corrected. For example, it showed me that users wanted to be able to share directly from the file and choose where it would go as opposed to going through multiple steps. 
+                </p>
+                <p>
+                    I implemented the feedback from the first round of user testing, added the visual design and then completed the round of user testing. 
+                </p>
+                <div class="prototype-examples">
+                    <video playsinline="" preload="none" loop="" autoplay="" muted="" src="../videos/wireframe-share.mp4"></video>
+                    <video playsinline="" preload="none" loop="" autoplay="" muted="" src="../videos/hifi-mockup-share.mp4"></video>
+                </div>
+            </section>
+
+            <!-- feedback -->
+            <section class="project feedback">
+            <h3>Feedback</h3>  
+            <p>
+                Thanks to the great feedback, I was able to increase the usability score from 66 to 82! I received overwhelmingly positive feedback from the users. 
+            </p>  
+            <p>
+                Nonetheless, I wanted to continue to improve the app so I went through a quick round of preference testing. I was having a hard time figuring out which main color to use throughout the app. I wanted some insight on other UI parts like the search bar.  
+            </p>
+            <p>
+                The preference testing was able to clear most up that by showing me statistically what users prefer. 
+            </p>
+            <img src="../images/blue-button.png" alt="blue button">
+            <img src="../images/orange-button.png" alt="orange button">
+            <a href="https://www.figma.com/proto/FJ9Vb8gAfj0sWk7hQT8lwo/UX-Intensive?node-id=180%3A945&viewport=62%2C365%2C0.021977005526423454&scaling=scale-down&hide-ui=1" aria-label="prototype">
+                <button type="button">View Final Prototype</button>
+            </a>
+            </section>
+
+            <!-- conclusion -->
+            <section class="project conclusion">
+                <h2>The Conlusion</h2>
+                <p>
+                    There are still aspects I would continue to improve and refine if given more time. For example, I would have worked on making a light and dark version of the app. I would love to see how each performs in user testing, specifically more preference testing. Additionally, I designed the app primarily for mobile since the user research showed that users would upload from mobile more. However, they would still use a computer so I would enjoy spending time designing the web version as well.
+                </p>
+                <h3>What I learned</h3>
+                <p>
+                    I learned so much from working on this project. I made mistakes along the way like not thinking through what additional screens would be needed to complete a process. Case in point, the original process for sharing an item was very wonky now that I look back on it. 
+                </p>
+                <p>
+                    One of my biggest takeaways was learning how designs files need to be laid out for developers. Now I know that the handoff is extremely important and it is key to include the developers early on because they can help fill in gaps. It’s important to organize files to make the transition easier and keep everything named in a specific manner. I’m happy to have a better understanding of how that works.
+                </p>
+                <p>
+                    Another major area I learned was the branding. I figured out that branding, as open as it is., can still be boiled down to some science. Once there’s a process for doing the research and putting together the moodboards the branding can come together much easier. I plan to use the processes I learned in future projects like finding name generators and color palette generators to spark inspiration. 
+                </p>
+                <p>
+                    All in all, I learned a ton and I am incredibly happy with the way it turned out. I’m looking forward to the next journey.   
+                </p>
+            </section>
+        </main>  
+    </div>
+    <script src="../scripts/zenscroll-min.js"></script>    
+</body>
+</html>

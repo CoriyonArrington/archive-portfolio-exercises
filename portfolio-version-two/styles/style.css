@@ -1,0 +1,869 @@
+/*--------------------------------------------------------------
+# Global Styles
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# The Typography
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url(/fonts/nunitosans-regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    src: url(/fonts/nunitosans-semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    src: url(/fonts/montserrat-light.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/nunitosans-regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    src: url(/fonts/montserrat-bold.ttf);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.6rem 0;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    padding: 1.6rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+/*--------------------------------------------------------------
+# Global Styles
+--------------------------------------------------------------*/
+a:link, a:visited {
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden !important; 
+}
+
+button, img, video {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #FFCD00;
+    border-radius: 8rem;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 0.8rem;
+    margin: 1.6rem auto;
+    padding: 1.6rem;
+}
+
+button:focus, button:hover {
+    background-color: #FFCD00;
+    color: #000000;
+}
+
+.container {
+    padding: 0 2.4rem;
+    width: 100%;
+}
+
+div.mobile-nav-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    width: 100%;
+}
+
+header.desktop-nav {
+    display: none;
+}
+
+header.mobile-nav {
+    background-color: transparent;
+    height: 88px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header.mobile-nav.is-hidden {
+    transform: translateY(-300%);
+    transition: 0.64s ease-out;
+}
+
+header.mobile-nav.is-visible {
+    background-color: #000000;
+    transform: translateY(-10px);
+    transition: 0.64s ease-in;
+}
+
+html {
+    font-size: 10px;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+img.mobile-avatar {
+    margin: 0;
+    padding: 0;
+    width: 48px;
+}
+
+nav#overlay {
+    background-color: #000000;
+    height: 0%;
+    left: 0;
+    border-left: 4px solid #FFCD00;
+    border-right: 4px solid #FFCD00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    outline-offset: -2px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    z-index: 20;
+}
+
+nav#overlay .overlay-content {
+    text-align: center;
+    width: 100%;
+}
+
+nav#overlay .overlay-content a {
+    color: #ffffff;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3.2rem;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav#project {
+    background-color: #000000;
+    height: 0%;
+    left: 0;
+    border-left: 4px solid #FFCD00;
+    border-right: 4px solid #FFCD00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline-offset: -2px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    z-index: 20;
+}
+
+nav#project .project-content {
+    text-align: center;
+    width: 100%;
+}
+
+nav#project .project-content a {
+    color: #ffffff;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.4rem;
+    padding: 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 4.8rem;
+}
+
+section h2 {
+    width: 92%;
+}
+
+span.fab, span.far, span.fas {
+    color: #ffffff;
+}
+
+span.fab:hover, span.far:hover, span.fas:hover  {
+    color: #FFCD00;
+}
+
+span.far.fa-window-close.fa-3x { 
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin: 0.8rem 1.6rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 48px;  
+}
+
+span.fas.fa-chevron-down.fa-2x {
+    align-items: flex-start;
+    align-self: center;
+    color: #ADACAF;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+}
+
+span#close-btn, span#close-pro-btn  {
+    display: none;
+    z-index: 40;
+}
+
+::selection {
+    background: #FFCD00;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# The Home Page
+--------------------------------------------------------------*/
+#contact {
+    display: grid;
+}
+
+#contact h1 {
+    width: 88%;
+}
+
+div.app-video {
+    display: contents;
+}
+
+div#footer {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    padding: 0 3rem;
+}
+
+div#footer h5 {
+    margin: 1.2em;
+}
+
+div.social-media ul {
+    display: grid;
+    grid-row-gap: 2.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin: 0 1.6rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#home {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+video.app-video-ex {
+    height: 48%;
+    width: auto;
+}
+
+.video-bg {
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 0.40;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+/*--------------------------------------------------------------
+# The About Page
+--------------------------------------------------------------*/
+body#about-page a#chevron {
+    align-self: center;
+}
+
+section.about-section {
+    height: auto;
+}
+
+section.about-start {
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 4.8rem 0;
+}
+
+section.about-start img {
+    left: 0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 75%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+/*--------------------------------------------------------------
+# The Project Page
+--------------------------------------------------------------*/
+body#project-page main {
+    padding: 4.8rem 0;
+}
+
+body#project-page ul {
+    align-items: center;
+    align-self: center;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+div.comp-analysis, div.user-personas {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+div.comp-analysis img, div.user-personas img {
+    width: 75%;
+    margin: 0 .8rem;
+}
+div.user-stories-list, div.prototype-list {
+    margin: 0 auto;
+}
+
+section.project.flows img {
+    display: none;
+}
+
+div.prototype-examples {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.project.feedback img {
+    width: 60%;
+}
+
+.project.prototype video {
+    width: 80%;
+}
+
+.project.summary h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.project.summary h4 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.project.summary li {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+section.project {
+    height: auto;
+}
+
+span#chevron {
+    display: none;
+}
+
+span#chevron.is-visible {
+    display: flex;
+}
+
+span#chevron.is-hidden {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/*--------------------------------------------------------------
+# Phone Queries
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 11px;
+    }
+}
+@media screen and (min-width: 375px) {
+    h1 {
+        font-size: 5.6rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-height: 812px) {
+    html {
+        font-size: 12px;
+    }
+
+    video.app-video-ex {
+        height: 48%;
+    }
+}
+
+@media screen and (min-width: 411px) and (min-height: 812px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Tablet Queries
+--------------------------------------------------------------*/
+@media screen and (min-width:768px) {
+    a#chevron {
+        align-self: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    div.summary-actions {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body#project-page main {
+        padding: 2.4rem 0;
+    }
+
+    body#project-page a#chevron {
+        justify-content: center;
+    }
+
+    #contact h1 {
+        align-self: center;
+    }
+
+    div.about-page-container {
+        margin: auto;
+        width: 84%;
+    }
+
+    div.home-page-container {
+        margin: auto;
+        width: 84%;
+    }
+
+    div.home-page-container h3 {
+        width: 86%;
+    }
+
+    #home {
+        justify-content: space-evenly;
+    }
+
+    #home h1 {
+        align-self: flex-start;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+
+    h3 {
+        width: 93%;
+        align-self: flex-start;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 88%;
+    }
+
+    .project.feedback img {
+        width: 24%;
+    }
+
+    .project.prototype video {
+        width: 64%;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    section h2 {
+        width: 100%;
+    }
+
+    section.project.flows img {
+        display: flex;
+    }
+
+    span.fas.fa-times.fa-3x {
+        display: none;
+    }
+
+    video.app-video-ex {
+        height: 64%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Small Laptop Queries
+--------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {  
+    div.about-styling {
+        display: flex;
+        flex-direction: column;
+        height: 88vh;
+    }
+    
+    body#about-page a#chevron {
+        display: none;
+    }
+
+    body#about-page main {
+        padding-top: 4.8rem;
+        text-shadow: 2px 2px #000000;
+    }
+
+    body#project-page a#chevron {
+        align-self: center;
+    }
+
+    div.app-video a {
+        align-self: auto;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: left;
+    }
+
+    div.comp-analysis img, div.user-personas img {
+        width: 32%;
+        margin: 0 auto;
+    }
+
+    div.comp-analysis h4 {
+        align-self: flex-end;
+    }
+
+    div.summary-actions {
+        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2.4rem 0;
+    }
+
+    div.survey-results {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    div.survey-results img {
+        max-width: 100%;
+    }
+
+    header.mobile-nav, img.mobile-avatar {
+        display: none;
+    }
+
+    header.desktop-nav {
+        display: flex;
+        height: 88px;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    header.desktop-nav.is-hidden {
+        transform: translateY(-300%);
+        transition: 0.64s ease-out;
+    }
+    
+    header.desktop-nav.is-visible {
+        background-color: #000000;
+        transform: translateY(0);
+        transition: 0.64s ease-in;
+    }
+
+    img.desktop-avatar {
+        left: 2.4rem;
+        padding: 0;
+        position: absolute;
+        top: 1.6rem;
+        width: 48px;
+    }
+
+    nav.desktop-menu {
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 1.6rem;
+        width: 100%;
+    }
+
+    nav.desktop-menu ul {
+        align-items: center;
+        display: flex;
+        list-style: none;
+    }
+
+    nav.desktop-menu a {
+        color: #ffffff;
+        display: flex;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.2rem;
+        margin: 1.6rem 0.8rem;
+    }
+
+    nav.desktop-menu a:hover {
+        color: #FFCD00;
+    }
+    
+    .project img {
+        max-width: 72%;
+    }
+
+    .project.prototype video {
+        width: 48%;
+    }
+
+    section.about-start {
+        height: auto;
+        padding: 0;
+    }
+    
+    section.about-start a {
+        display: none;
+    }
+
+    section.about-section {
+        width: 72%;
+    }
+
+    section#work {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    section#work p {
+        align-self: start;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    section#work a {
+        align-self: flex-start;
+        grid-row-start: 3;
+    }
+
+    video.app-video-ex {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 72%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Regular Laptop Queries
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+    a:hover, body, button, html  {
+        cursor: none !important;
+    }
+
+    .cursor-dot,
+    .cursor-dot-outline {
+        border-radius: 50%;
+        left: 50%;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    
+    .cursor-dot {
+        background-color: #FFCD00;
+        height: 8px;
+        mix-blend-mode: difference;
+        width: 8px;
+        z-index: 9999; 
+    }
+    
+    .cursor-dot-outline {
+        background-color: #ffffff;
+        display: none;
+        height: 24px;
+        width: 24px;
+        z-index: 9999;  
+    }
+
+    div.social-media ul {
+        margin: 0 18rem;
+    }
+
+    #home {
+        align-items: center;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #home a {
+        align-self: center;
+        grid-row-start: 3;
+    }
+
+    #home h1 {
+        align-self: flex-end;
+    }
+
+    #home h3 {
+        align-self: flex-start;
+    }
+
+    .project img {
+        max-width: 54%;
+    }
+
+    .project.feedback img {
+        width: 10%;
+    }
+
+    .project.prototype button {
+        align-self: flex-end;
+    }
+
+    section.about-section {
+        width: 56%;
+    }
+
+    section h2 {
+        width: 74%;
+    }
+
+    section#contact h3 {
+        margin: 0;
+    }
+
+    section#work h2 {
+        align-self: flex-end;
+    }
+
+    section#work p {
+        align-self: center;
+        width: 84%;
+    }
+
+    .video-bg {
+        opacity: 0.24;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
