@@ -1,0 +1,25 @@
+/* app/global.css */
+
+/* ——————————————————————————————
+   Global Styles & Tailwind Imports
+   —————————————————————————————— */
+
+/* 1. Tailwind’s base reset */
+@tailwind base;
+
+/* 2. Tailwind’s component classes */
+@tailwind components;
+
+/* 3. Tailwind’s utility classes */
+@tailwind utilities;
+
+/* 4. Your custom global overrides (if any) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* e.g.
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+*/

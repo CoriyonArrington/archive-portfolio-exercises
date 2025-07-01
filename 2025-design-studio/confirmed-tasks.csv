@@ -1,0 +1,66 @@
+phase,priority,title,body
+Phase 0,Critical,Initialize Git repo with clear branch strategy,Initialize Git repo with clear branch strategy
+Phase 0,Critical,Set up local dev environment and .env.local,"Clone repo, install dependencies, copy .env.example to .env.local"
+Phase 0,Critical,"Configure Supabase project (Auth, DB, storage, RLS)","Set up Supabase Auth, database, storage buckets, and RLS policies"
+Phase 0,Critical,Scaffold Next.js 14 + Tailwind CSS with design tokens,Initialize Next.js 14 App Router with Tailwind and configure design tokens in tailwind.config.ts
+Phase 0,Critical,Create basic directory structure,"Establish folders: app/, components/, lib/, scripts/, tests/"
+Phase 0,Recommended,Set up ESLint & Prettier with Husky,"Configure ESLint, Prettier, and Husky pre-commit hooks"
+Phase 0,Recommended,Add VS Code settings for TypeScript and formatting,Define workspace settings for TS strict mode and format on save
+Phase 0,Recommended,Configure GitHub Actions for lint and tests,"Create CI workflow to run lint, unit, and integration tests"
+Phase 0,Recommended,Link Vercel project and set production ENV vars,Connect repo to Vercel and configure environment variables
+Phase 0,Optional,Document commit and branch conventions,Add CONTRIBUTING.md with commit message and branch naming guidelines
+Phase 0,Optional,Share ESLint/Prettier scripts in package.json,Add formatting and linting scripts to package.json to share configuration
+Phase 1,Critical,Define CMS schema for core tables,"Create Supabase tables: pages, projects, services, testimonials, faqs, process_phases, contact_submissions"
+Phase 1,Critical,"Integrate Home, Work, Services, About, Contact pages with CMS",Wire pages to CMS data via Next.js dynamic routes
+Phase 1,Critical,Implement dynamic metadata from CMS,"Fetch title, description, slug, and OG tags from DB for each page"
+Phase 1,Critical,Build Contact form with server-side validation,Set up contact form to write to contact_submissions with success/failure states
+Phase 1,Recommended,Enable preview/draft mode in CMS,Add preview and draft content features to admin dashboard
+Phase 1,Recommended,Show services & testimonial previews on Home,Render a preview grid of Featured services and testimonials on Home
+Phase 1,Recommended,Write unit and integration tests for routing,Test dynamic slug-based routing and data fetching
+Phase 1,Optional,Add scroll-to-top button,Implement smooth scroll and back-to-top UI element
+Phase 1,Optional,Fallback Lorem Ipsum for empty content,Provide default content placeholders for missing CMS fields
+Phase 2,Critical,Implement cache revalidation API,Create /api/admin/revalidate for on-demand ISR
+Phase 2,Critical,Implement Supabase debug API,Create /api/admin/debug/supabase endpoint for DB testing
+Phase 2,Critical,Implement API debug endpoint,Create /api/admin/debug/api for testing API responses
+Phase 2,Critical,Configure role-based Auth & RLS,Set up Supabase Auth and RLS policies and Next.js middleware
+Phase 2,Critical,Build Admin Dashboard CRUD UI,Implement full CRUD for core content tables in admin dashboard
+Phase 2,Recommended,Add PDF generation API,Implement /api/generate-pdf to export case studies/resume
+Phase 2,Optional,CSV import/export in Admin,Bulk import and export content via CSV
+Phase 2,Optional,Developer tools panels,Add dashboard panels for stats and recent errors
+Phase 3,Critical,Install ShadCN/UI and Radix UI,Wire in ShadCN/UI and Radix UI with Tailwind tokens
+Phase 3,Critical,Build Button component,Create a reusable <Button> component
+Phase 3,Critical,Build Card component,Create a reusable <Card> component
+Phase 3,Critical,Build FormField component,Implement <FormField> with validation states
+Phase 3,Recommended,Create page-section components,"Build HeroSection, FeatureGrid, and other sections"
+Phase 3,Recommended,Implement layout wrappers,"Add MainNav, Footer, Container components"
+Phase 3,Recommended,Add responsive utilities,Provide server-rendered breakpoints and responsive classes
+Phase 3,Optional,Add Framer Motion animations,Animate page transitions and reveal effects
+Phase 3,Optional,Implement dark mode toggle,Add theming support for light/dark mode
+Phase 4,Critical,Write unit tests,"Add Vitest unit tests for scripts, lib, and UI components"
+Phase 4,Critical,Write integration tests,Add Vitest integration tests for API routes and data fetching
+Phase 4,Recommended,Set up CI pipeline,"Configure GitHub Actions for lint, test, and build on PRs"
+Phase 4,Recommended,Add E2E tests,Implement Playwright tests for core user flows
+Phase 4,Optional,Automate sitemap generation,Set up next-sitemap and robots.txt automation
+Phase 4,Optional,Add PR preview comments,Use GitHub Actions to comment test/perf results on PRs
+Phase 5,Critical,Scaffold Playground hub,Create /playground route and navigation
+Phase 5,Critical,Build Interactive Quiz,Implement interactive quiz with timing and scoring
+Phase 5,Critical,Build Health Progress Tracker,Implement health tracker UI and charts
+Phase 5,Critical,Build DBT Diary Card,Implement DBT diary card journaling UI
+Phase 5,Recommended,Admin CRUD UI for Quiz content,"Build admin interfaces for quizzes, questions, and options"
+Phase 5,Optional,Add user-specific auth for tools,Enforce RLS for user-specific data in tools
+Phase 5,Optional,Export user data,Allow CSV or PDF export of user tool data
+Phase 6,Critical,Scaffold Blog pages,Create /blog listing and dynamic post pages
+Phase 6,Critical,Integrate analytics,Add Plausible or Google Analytics tracking
+Phase 6,Recommended,Automate content calendar,Sync Notion content calendar with CMS
+Phase 6,Recommended,Ensure rich social previews,Configure OG and Twitter cards for all pages
+Phase 6,Optional,Set up A/B testing,Use Vercel Edge experiments for A/B tests
+Phase 6,Optional,Implement heatmaps,Integrate Hotjar or FullStory for user recordings
+Phase 7,Recommended,Set up error monitoring,Configure Sentry or LogRocket for error tracking
+Phase 7,Recommended,Set up uptime monitoring,Configure UptimeRobot for site uptime alerts
+Phase 7,Recommended,Schedule Supabase backups,Automate regular database backups via Supabase CLI
+Phase 7,Optional,Build Design System Audit Tool,Implement admin UI to audit component tokens and usage
+Phase 7,Optional,Conduct accessibility audit,Perform periodic UX and a11y reviews and scoring
+Phase 7,Optional,Optimize performance,Regular sprints for image formats and code splitting
+Phase 7,Optional,Add internationalization,Setup i18n support for multiple languages
+Phase 7,Optional,Enable multi-tenant support,Architect CMS and routes for multi-client white labeling
+Phase 7,Optional,Implement personalization engine,Add dynamic recommendations based on user data
