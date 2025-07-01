@@ -1,0 +1,93 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%; /* Your CSS variables */
+    --primary-foreground: 0 0% 98%; /* Your CSS variables */
+    --secondary: 0 0% 96.1%; /* Your CSS variables */
+    --secondary-foreground: 0 0% 9%; /* Your CSS variables */
+    --muted: 0 0% 96.1%; /* Your CSS variables */
+    --muted-foreground: 0 0% 45.1%; /* Your CSS variables */
+    --accent: 0 0% 96.1%; /* Your CSS variables */
+    --accent-foreground: 0 0% 9%; /* Your CSS variables */
+    --destructive: 0 84.2% 60.2%; /* Your CSS variables */
+    --destructive-foreground: 0 0% 98%; /* Your CSS variables */
+    --border: 0 0% 89.8%; /* Your CSS variables */
+    --input: 0 0% 89.8%; /* Your CSS variables */
+    --ring: 0 0% 3.9%; /* Your CSS variables */
+    --radius: 0.5rem; /* Your CSS variables */
+    --chart-1: 12 76% 61%; /* Your CSS variables */
+    --chart-2: 173 58% 39%; /* Your CSS variables */
+    --chart-3: 197 37% 24%; /* Your CSS variables */
+    --chart-4: 43 74% 66%; /* Your CSS variables */
+    --chart-5: 27 87% 67%; /* Your CSS variables */
+  }
+
+  .dark {
+    --background: 0 0% 3.9%; /* Your CSS variables */
+    --foreground: 0 0% 98%; /* Your CSS variables */
+    --card: 0 0% 3.9%; /* Your CSS variables */
+    --card-foreground: 0 0% 98%; /* Your CSS variables */
+    --popover: 0 0% 3.9%; /* Your CSS variables */
+    --popover-foreground: 0 0% 98%; /* Your CSS variables */
+    --primary: 0 0% 98%; /* Your CSS variables */
+    --primary-foreground: 0 0% 9%; /* Your CSS variables */
+    --secondary: 0 0% 14.9%; /* Your CSS variables */
+    --secondary-foreground: 0 0% 98%; /* Your CSS variables */
+    --muted: 0 0% 14.9%; /* Your CSS variables */
+    --muted-foreground: 0 0% 63.9%; /* Your CSS variables */
+    --accent: 0 0% 14.9%; /* Your CSS variables */
+    --accent-foreground: 0 0% 98%; /* Your CSS variables */
+    --destructive: 0 62.8% 30.6%; /* Your CSS variables */
+    --destructive-foreground: 0 0% 98%; /* Your CSS variables */
+    --border: 0 0% 14.9%; /* Your CSS variables */
+    --input: 0 0% 14.9%; /* Your CSS variables */
+    --ring: 0 0% 83.1%; /* Your CSS variables */
+    --chart-1: 220 70% 50%; /* Your CSS variables */
+    --chart-2: 160 60% 45%; /* Your CSS variables */
+    --chart-3: 30 80% 55%; /* Your CSS variables */
+    --chart-4: 280 65% 60%; /* Your CSS variables */
+    --chart-5: 340 75% 55%; /* Your CSS variables */
+  }
+}
+
+@layer base {
+  /* Add the smooth scroll behavior for the html element */
+  html {
+    scroll-behavior: smooth; /* Your CSS variables */
+  }
+
+  /*
+  REMOVED THE FOLLOWING RULE AS IT CONFLICTS WITH CHAKRA UI COMPONENT STYLING:
+  * {
+    @apply border-border;
+  }
+  */
+
+  body {
+    @apply bg-background text-foreground; /* Your CSS variables */
+    /* Any other global body styles can be added here if needed */
+  }
+}
+
+/* Added keyframes for the pulse animation */
+@keyframes pulseAnimation {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}

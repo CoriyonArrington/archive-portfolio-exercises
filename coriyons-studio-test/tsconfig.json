@@ -1,0 +1,45 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*",
+        "src/*"
+      ]
+    },
+    "types": [
+      "node",
+      "next",
+      "@testing-library/jest-dom",
+      "vitest/globals" // Ensures 'vi' namespace is recognized by TypeScript
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "vitest-setup.ts" // Include your Vitest setup file
+  ],
+  "exclude": ["node_modules"]
+}
