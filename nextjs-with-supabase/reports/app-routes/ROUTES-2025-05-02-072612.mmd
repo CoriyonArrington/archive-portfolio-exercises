@@ -1,0 +1,23 @@
+graph TD
+    subgraph Main Site
+        main((🏠 Main Pages))
+        resources((📚 Resource Pages))
+        admin((🔒 Admin Section))
+        misc((📁 Miscellaneous))
+        main --> home["Homepage<br>(`/`)"]
+        main --> about["About Page<br>(`/about`)"]
+        main --> services["Services Page<br>(`/services`)"]
+        main --> projects["Projects Listing<br>(`/projects`)"]
+        main --> projects__slug["Project Detail<br>(`/projects/[slug]`)"]
+        main --> contact["Contact Page<br>(`/contact`)"]
+        resources --> process["Process Page<br>(`/process`)"]
+        resources --> faq["FAQ Page<br>(`/faq`)"]
+        resources --> feedback["Feedback Page<br>(`/feedback`)"]
+        admin --> admin["Admin Dashboard<br>(`/admin`)"]
+        admin --> admin_pages["Admin - Pages<br>(`/admin/pages`)"]
+        admin --> admin_projects["Admin - Projects<br>(`/admin/projects`)"]
+        admin --> admin_services["Admin - Services<br>(`/admin/services`)"]
+        admin --> admin_testimonials["Admin - Testimonials<br>(`/admin/testimonials`)"]
+        admin --> admin_faqs["Admin - FAQs<br>(`/admin/faqs`)"]
+        misc --> _not_found["Not Found<br>(`/_not-found`)"]
+    end

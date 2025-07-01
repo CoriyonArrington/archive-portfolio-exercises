@@ -1,0 +1,97 @@
+Phase: 0	Work within Phase 0: Foundations & Environment.
+Phase: 1	Work within Phase 1: Core Pages & CMS Integration.
+Phase: 2	Work within Phase 2: Admin & Platform Tools.
+Phase: 3	Work within Phase 3: UI Components & Styling.
+Phase: 4	Work within Phase 4: Testing, QA & CI/CD Setup.
+Phase: 5	Work within Phase 5: Playground Tools Implementation.
+Phase: 6	Work within Phase 6: Content Strategy & Analytics.
+Phase: 7	Work within Phase 7: Deployment, Monitoring & Continuous Improvement.
+Type: Bug	An error, flaw, or unexpected behavior in the system.
+Type: Chore	Maintenance, setup, refactoring, or other non-functional tasks.
+Type: Docs	Tasks related to writing or updating documentation.
+Type: Feature	A new piece of functionality or enhancement visible to the user.
+Type: Refactor	Improving existing code structure or design without changing functionality.
+Type: Test	Tasks related to writing, running, or improving tests.
+Area: A/B Testing	Tasks related to setting up or analyzing A/B tests.
+Area: Accessibility	Tasks focused on improving application accessibility (a11y).
+Area: Admin	Tasks related to the admin dashboard interface and functionality.
+Area: Analytics	Tasks related to integrating or analyzing usage analytics.
+Area: Animation	Tasks related to implementing UI animations and transitions.
+Area: API	Tasks related to designing, building, or consuming APIs.
+Area: Architecture	Tasks related to high-level system design and structure.
+Area: Auth	Tasks related to user authentication and authorization.
+Area: Automation	Tasks related to automating processes or workflows.
+Area: Backend	Tasks related to server-side logic, database interactions (excluding CMS schema), and APIs.
+Area: Backup	Tasks related to database or system backups and recovery.
+Area: CI/CD	Tasks related to Continuous Integration and Continuous Deployment pipelines.
+Area: CMS	Tasks related to the Content Management System, schema definition, and content integration.
+Area: Component Library	Tasks related to building or maintaining reusable UI components.
+Area: Config	Tasks related to project configuration files and settings.
+Area: Content	Tasks related to managing or displaying website content (excluding schema).
+Area: Content Rendering	Tasks focused on how structured content (JSON, Markdown) is displayed.
+Area: Content Strategy	Tasks related to planning and managing website content.
+Area: Data Management	Tasks related to importing, exporting, or managing application data.
+Area: Debugging	Tasks related to troubleshooting issues or adding debugging tools.
+Area: Deployment	Tasks related to deploying the application to hosting environments.
+Area: Design System	Tasks related to the overall design system definition and maintenance.
+Area: DX	Tasks focused on improving the Developer Experience.
+Area: E2E Tests	Tasks related to End-to-End testing using tools like Playwright or Cypress.
+Area: Experimentation	Tasks related to setting up and running experiments.
+Area: Forms	Tasks related to building and managing HTML forms.
+Area: Frontend	Tasks related to the user interface, client-side logic, and browser interactions.
+Area: Git	Tasks related to Git repository management and branching strategies.
+Area: GitHub Actions	Tasks specifically related to configuring GitHub Actions workflows.
+Area: i18n	Tasks related to internationalization and localization.
+Area: Integration	Tasks related to integrating third-party services or systems.
+Area: Integration Tests	Tasks related to writing tests for interactions between components or modules.
+Area: Layout	Tasks related to the main page structure, navigation, header, and footer.
+Area: Monitoring	Tasks related to setting up application monitoring (errors, uptime, performance).
+Area: Next.js	Tasks specifically related to the Next.js framework features or configuration.
+Area: Ops	Tasks related to system operations, infrastructure, and maintenance.
+Area: Performance	Tasks focused on improving application speed and performance.
+Area: Personalization	Tasks related to implementing content or experience personalization.
+Area: QA	Tasks related to Quality Assurance processes and manual testing.
+Area: Quiz	Tasks specifically related to the Interactive Quiz feature.
+Area: Health Tracker	Tasks specifically related to the Health Progress Tracker feature.
+Area: DBT Card	Tasks specifically related to the DBT Diary Card feature.
+Area: Responsiveness	Tasks focused on ensuring the application adapts to different screen sizes.
+Area: RLS	Tasks related to Supabase Row Level Security policies.
+Area: Routing	Tasks related to application page routing and navigation.
+Area: Schema	Tasks related to defining or modifying the database schema (primarily CMS).
+Area: Scripts	Tasks related to utility scripts in the /scripts directory.
+Area: SEO	Tasks related to Search Engine Optimization.
+Area: Setup	Tasks related to initial project setup and configuration.
+Area: Social	Tasks related to social media integration or previews.
+Area: Styling	Tasks related to CSS, Tailwind, component styling, and visual appearance.
+Area: Supabase	Tasks specifically related to Supabase features or configuration.
+Area: Testing	General tasks related to testing methodologies or frameworks.
+Area: Theming	Tasks related to implementing light/dark modes or other visual themes.
+Area: Tooling	Tasks related to development tools, linters, formatters, etc.
+Area: UI Library	Tasks related to the chosen UI component library (e.g., Shadcn/UI, Radix).
+Area: UI/UX	Tasks focused on improving the overall User Interface and User Experience.
+Area: Unit Tests	Tasks related to writing isolated tests for individual functions or components.
+Area: User Behavior	Tasks related to tracking or analyzing user behavior (e.g., heatmaps).
+Area: Vercel	Tasks specifically related to Vercel hosting platform features or configuration.
+Priority: Critical	Must-have task, essential for current goals or core functionality.
+Epic: Foundations	Issues related to the 'Foundational Setup (Phase 0)' Epic.
+Epic: Core Pages	Issues related to the 'Core Page Implementation (Phase 1)' Epic.
+Epic: Admin Tools	Issues related to the 'Admin & Platform Tools (Phase 2)' Epic.
+Epic: Styling	Issues related to the 'Styling & Component System (Phase 3)' Epic.
+Epic: Testing QA	Issues related to the 'Testing & QA Framework (Phase 4)' Epic.
+Epic: CI/CD	Issues related to the 'CI/CD Pipeline Setup (Phase 4)' Epic.
+Epic: Content Expansion	Issues related to the 'Content Expansion (Solutions & Blog) (Phase 1/6)' Epic.
+Epic: Playground	Issues related to the 'Playground Features (Phase 5)' Epic.
+Epic: Analytics	Issues related to the 'Analytics Integration (Phase 6)' Epic.
+Epic: Deployment	Issues related to the 'Deployment & Monitoring (Phase 7)' Epic.
+Epic: Post-Launch	Issues related to the 'Post-Launch Improvements (Phase 7)' Epic.
+Feature: Blog	Issues related to the Blog feature.
+Feature: Contact Form	Issues related to the Contact Form feature.
+Feature: Data Export	Issues related to data export functionality.
+Feature: Data Management	Issues related to general data import/export/management features.
+Feature: DBT Card	Issues related to the DBT Diary Card feature.
+Feature: Health Tracker	Issues related to the Health Progress Tracker feature.
+Feature: Homepage	Issues related to the Homepage sections/features.
+Feature: PDF Export	Issues related to PDF generation or export functionality.
+Feature: Playground	Issues related to the general Playground section or hub.
+Feature: Quiz	Issues related to the Interactive Quiz feature.
+Feature: Solutions	Issues related to the Solutions pages/feature.

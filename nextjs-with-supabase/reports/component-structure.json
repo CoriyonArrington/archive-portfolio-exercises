@@ -1,0 +1,401 @@
+[
+  {
+    "name": "AboutSection",
+    "location": "@/components/page-sections/about-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "AuditDashboard",
+    "location": "@/components/admin/audit-dashboard.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "BlogCard",
+    "location": "@/components/common/blog-card.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "BlogSection",
+    "location": "@/components/page-sections/blog-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "CodeBlock",
+    "location": "@/components/tutorial/code-block.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "CodeDuplicationList",
+    "location": "@/components/admin/code-duplication-list.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ComponentStatusList",
+    "location": "@/components/admin/component-status-list.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ConnectSupabaseSteps",
+    "location": "@/components/tutorial/connect-supabase-steps.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ContactForm",
+    "location": "@/components/forms/contact-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ContentSection",
+    "location": "@/components/layout/content-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "CtaSection",
+    "location": "@/components/page-sections/cta-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "DeployButton",
+    "location": "@/components/deploy-button.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "DesignProcess",
+    "location": "@/components/common/design-process.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "EnvVarWarning",
+    "location": "@/components/env-var-warning.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FaqFilter",
+    "location": "@/components/common/faq-filter.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FaqForm",
+    "location": "@/components/admin/faq-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FaqItem",
+    "location": "@/components/common/faq-item.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FaqSection",
+    "location": "@/components/page-sections/faq-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FaqTable",
+    "location": "@/components/admin/faq-table.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FeaturedImage",
+    "location": "@/components/common/featured-image.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FeedbackForm",
+    "location": "@/components/forms/feedback-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FetchDataSteps",
+    "location": "@/components/tutorial/fetch-data-steps.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "Footer",
+    "location": "@/components/layout/footer.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "FormMessage",
+    "location": "@/components/form-message.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "HeaderAuth",
+    "location": "@/components/header-auth.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "HealthScore",
+    "location": "@/components/admin/health-score.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "HeroSection",
+    "location": "@/components/page-sections/hero-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "Icon",
+    "location": "@/components/common/icon.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ImplementationChecklist",
+    "location": "@/components/admin/implementation-checklist.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "MarkdownRenderer",
+    "location": "@/components/common/markdown-renderer.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "Navigation",
+    "location": "@/components/layout/navigation.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "NextLogo",
+    "location": "@/components/next-logo.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "PageContentForm",
+    "location": "@/components/admin/page-content-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "PageTable",
+    "location": "@/components/admin/page-table.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProcessSection",
+    "location": "@/components/page-sections/process-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProjectCard",
+    "location": "@/components/common/project-card.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProjectForm",
+    "location": "@/components/admin/project-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProjectImage",
+    "location": "@/components/common/project-image.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProjectsSection",
+    "location": "@/components/page-sections/projects-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ProjectTable",
+    "location": "@/components/admin/project-table.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ServiceCard",
+    "location": "@/components/common/service-card.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ServiceForm",
+    "location": "@/components/admin/service-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ServicesSection",
+    "location": "@/components/page-sections/services-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "ServiceTable",
+    "location": "@/components/admin/service-table.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SignUpUserSteps",
+    "location": "@/components/tutorial/sign-up-user-steps.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SiteHeader",
+    "location": "@/components/layout/site-header.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SolutionsSection",
+    "location": "@/components/page-sections/solutions-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SpeakingCard",
+    "location": "@/components/community/speaking-card.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SubmitButton",
+    "location": "@/components/submit-button.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "SupabaseLogo",
+    "location": "@/components/supabase-logo.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "TestimonialCard",
+    "location": "@/components/common/testimonial-card.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "TestimonialForm",
+    "location": "@/components/admin/testimonial-form.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "TestimonialsSection",
+    "location": "@/components/page-sections/testimonials-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "TestimonialTable",
+    "location": "@/components/admin/testimonial-table.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "TutorialStep",
+    "location": "@/components/tutorial/tutorial-step.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "UnusedComponentsList",
+    "location": "@/components/admin/unused-components-list.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  },
+  {
+    "name": "WhyUxSection",
+    "location": "@/components/page-sections/why-ux-section.tsx",
+    "status": "Needs Review",
+    "usageCount": 0,
+    "notes": ""
+  }
+]

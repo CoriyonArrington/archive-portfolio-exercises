@@ -1,0 +1,1526 @@
+{
+  "timestamp": "2025-05-02T19:57:00.928Z",
+  "summary": {
+    "unusedComponentsCount": 149,
+    "unusedDependenciesCount": 12,
+    "duplicationPercentage": 5.09,
+    "healthScore": 0,
+    "standardizedCount": 0,
+    "totalComponents": 57
+  },
+  "details": {
+    "unusedComponents": [
+      {
+        "path": "middleware.ts",
+        "name": "middleware"
+      },
+      {
+        "path": "middleware.ts",
+        "name": "config"
+      },
+      {
+        "path": "next.config.ts",
+        "name": "default"
+      },
+      {
+        "path": "tailwind.config.ts",
+        "name": "default"
+      },
+      {
+        "path": "components/deploy-button.tsx",
+        "name": "default"
+      },
+      {
+        "path": "components/next-logo.tsx",
+        "name": "default"
+      },
+      {
+        "path": "components/supabase-logo.tsx",
+        "name": "default"
+      },
+      {
+        "path": "config/site.ts",
+        "name": "SiteConfig (used in module)"
+      },
+      {
+        "path": "hooks/use-toast.ts",
+        "name": "reducer (used in module)"
+      },
+      {
+        "path": "hooks/use-toast.ts",
+        "name": "toast (used in module)"
+      },
+      {
+        "path": "types/blog.ts",
+        "name": "BlogPostCardProps"
+      },
+      {
+        "path": "types/project.ts",
+        "name": "ProjectContent"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "Tables (used in module)"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "TablesInsert"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "TablesUpdate"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "Enums (used in module)"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "CompositeTypes (used in module)"
+      },
+      {
+        "path": "types/supabase.ts",
+        "name": "Constants"
+      },
+      {
+        "path": "app/(auth-pages)/layout.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/layout.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/protected/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/protected/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/supabase-test/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/supabase-test/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "components/tutorial/connect-supabase-steps.tsx",
+        "name": "default"
+      },
+      {
+        "path": "components/tutorial/sign-up-user-steps.tsx",
+        "name": "default"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "H1Props"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "H2Props"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "H3Props"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "H4Props"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "PProps"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "LeadProps"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "BlockquoteProps"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "TypographyInlineCode"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "CodeProps"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "ListProps"
+      },
+      {
+        "path": "components/typography/index.ts",
+        "name": "InlineLinkProps"
+      },
+      {
+        "path": "components/ui/alert-dialog.tsx",
+        "name": "AlertDialogPortal (used in module)"
+      },
+      {
+        "path": "components/ui/alert-dialog.tsx",
+        "name": "AlertDialogOverlay (used in module)"
+      },
+      {
+        "path": "components/ui/alert-dialog.tsx",
+        "name": "AlertDialogTrigger (used in module)"
+      },
+      {
+        "path": "components/ui/badge.tsx",
+        "name": "BadgeProps (used in module)"
+      },
+      {
+        "path": "components/ui/badge.tsx",
+        "name": "badgeVariants (used in module)"
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "name": "ButtonProps (used in module)"
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "name": "DialogPortal (used in module)"
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "name": "DialogOverlay (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuCheckboxItem (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuSeparator (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuShortcut (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuGroup (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuPortal (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuSub (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuSubContent (used in module)"
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "name": "DropdownMenuSubTrigger (used in module)"
+      },
+      {
+        "path": "components/ui/form.tsx",
+        "name": "useFormField (used in module)"
+      },
+      {
+        "path": "components/ui/section.tsx",
+        "name": "SectionProps (used in module)"
+      },
+      {
+        "path": "components/ui/section.tsx",
+        "name": "sectionVariants (used in module)"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "name": "SelectGroup (used in module)"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "name": "SelectLabel (used in module)"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "name": "SelectSeparator (used in module)"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "name": "SelectScrollUpButton (used in module)"
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "name": "SelectScrollDownButton (used in module)"
+      },
+      {
+        "path": "components/ui/table.tsx",
+        "name": "TableFooter (used in module)"
+      },
+      {
+        "path": "components/ui/toast.tsx",
+        "name": "ToastAction (used in module)"
+      },
+      {
+        "path": "utils/supabase/middleware.ts",
+        "name": "Profile (used in module)"
+      },
+      {
+        "path": "utils/supabase/server.ts",
+        "name": "Profile (used in module)"
+      },
+      {
+        "path": ".next/types/app/layout.ts",
+        "name": "PageProps"
+      },
+      {
+        "path": ".next/types/app/layout.ts",
+        "name": "LayoutProps (used in module)"
+      },
+      {
+        "path": "app/(auth-pages)/forgot-password/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(auth-pages)/forgot-password/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(auth-pages)/sign-in/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(auth-pages)/sign-in/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(auth-pages)/sign-up/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(auth-pages)/sign-up/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(community)/minneapolis-ux-design/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(community)/minneapolis-ux-design/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(community)/services/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(community)/services/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(community)/speaking/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(community)/speaking/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(community)/uxpa-mn/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(community)/uxpa-mn/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(main)/about/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/about/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(main)/contact/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/contact/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(main)/projects/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/projects/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(main)/solutions/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/solutions/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(resources)/blog/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(resources)/blog/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(resources)/faq/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(resources)/faq/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(resources)/faq/page.tsx",
+        "name": "dynamic"
+      },
+      {
+        "path": "app/(resources)/feedback/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(resources)/feedback/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/(resources)/feedback/page.tsx",
+        "name": "dynamic"
+      },
+      {
+        "path": "app/(resources)/process/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/(resources)/process/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/dashboard/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/dashboard/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/design-system/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/design-system/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/faqs/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/faqs/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/pages/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/pages/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/projects/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/projects/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/services/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/services/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/testimonials/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/testimonials/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/auth/callback/route.ts",
+        "name": "GET"
+      },
+      {
+        "path": "app/protected/reset-password/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/protected/reset-password/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": ".next/types/app/admin/layout.ts",
+        "name": "PageProps"
+      },
+      {
+        "path": ".next/types/app/admin/layout.ts",
+        "name": "LayoutProps (used in module)"
+      },
+      {
+        "path": "app/(main)/projects/[slug]/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/(main)/projects/[slug]/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(main)/solutions/[slug]/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/(main)/solutions/[slug]/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/(resources)/blog/[slug]/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/(resources)/blog/[slug]/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/faqs/new/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/faqs/new/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/projects/new/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/projects/new/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/services/new/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/services/new/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": "app/admin/testimonials/new/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/testimonials/new/page.tsx",
+        "name": "metadata"
+      },
+      {
+        "path": ".next/types/app/admin/component-audit/page.ts",
+        "name": "PageProps (used in module)"
+      },
+      {
+        "path": ".next/types/app/admin/component-audit/page.ts",
+        "name": "LayoutProps"
+      },
+      {
+        "path": ".next/types/app/api/run-audit/route.ts",
+        "name": "PageProps"
+      },
+      {
+        "path": ".next/types/app/api/run-audit/route.ts",
+        "name": "LayoutProps"
+      },
+      {
+        "path": "app/admin/faqs/[id]/edit/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/admin/faqs/[id]/edit/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/pages/[slug]/edit/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/admin/pages/[slug]/edit/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/projects/[id]/edit/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/admin/projects/[id]/edit/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/services/[id]/edit/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/admin/services/[id]/edit/page.tsx",
+        "name": "default"
+      },
+      {
+        "path": "app/admin/testimonials/[id]/edit/page.tsx",
+        "name": "generateMetadata"
+      },
+      {
+        "path": "app/admin/testimonials/[id]/edit/page.tsx",
+        "name": "default"
+      }
+    ],
+    "unusedDependencies": [
+      {
+        "name": "autoprefixer",
+        "devDependency": false
+      },
+      {
+        "name": "date-fns",
+        "devDependency": false
+      },
+      {
+        "name": "prettier",
+        "devDependency": false
+      },
+      {
+        "name": "@tailwindcss/typography",
+        "devDependency": true
+      },
+      {
+        "name": "depcheck",
+        "devDependency": true
+      },
+      {
+        "name": "dotenv",
+        "devDependency": true
+      },
+      {
+        "name": "jscpd",
+        "devDependency": true
+      },
+      {
+        "name": "postcss",
+        "devDependency": true
+      },
+      {
+        "name": "supabase",
+        "devDependency": true
+      },
+      {
+        "name": "ts-prune",
+        "devDependency": true
+      },
+      {
+        "name": "typescript",
+        "devDependency": true
+      },
+      {
+        "name": "vitest",
+        "devDependency": true
+      }
+    ],
+    "duplications": [
+      {
+        "sourceFile": "app/admin/services/[id]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 20,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/services/[id]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/projects/[id]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 16,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/projects/[id]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/pages/[slug]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/faqs/[id]/edit/page.tsx",
+        "targetFile": "app/admin/projects/[id]/edit/page.tsx",
+        "lines": 18,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/faqs/[id]/edit/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/component-audit/page.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 9,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/component-audit/page.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/component-audit/page.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 34,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/component-audit/page.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/testimonials/new/page.tsx",
+        "targetFile": "app/admin/pages/[slug]/edit/page.tsx",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/testimonials/new/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/services/new/page.tsx",
+        "targetFile": "app/admin/testimonials/new/page.tsx",
+        "lines": 9,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/services/new/page.tsx",
+        "targetFile": "app/admin/services/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/projects/new/page.tsx",
+        "targetFile": "app/admin/pages/[slug]/edit/page.tsx",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/projects/new/page.tsx",
+        "targetFile": "app/admin/projects/[id]/edit/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/admin/faqs/new/page.tsx",
+        "targetFile": "app/admin/testimonials/[id]/edit/page.tsx",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/layout.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 30,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/admin/layout.ts",
+        "targetFile": ".next/types/app/admin/component-audit/page.ts",
+        "lines": 41,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "app/(community)/services/page.tsx",
+        "targetFile": "app/(main)/projects/page.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": ".next/types/app/layout.ts",
+        "targetFile": ".next/types/app/api/run-audit/route.ts",
+        "lines": 80,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/testimonial.ts",
+        "targetFile": "lib/actions/testimonial.ts",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/testimonial.ts",
+        "targetFile": "lib/actions/testimonial.ts",
+        "lines": 11,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/service.ts",
+        "targetFile": "lib/actions/testimonial.ts",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/service.ts",
+        "targetFile": "lib/actions/service.ts",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/service.ts",
+        "targetFile": "lib/actions/testimonial.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/project.ts",
+        "targetFile": "lib/actions/project.ts",
+        "lines": 11,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/project.ts",
+        "targetFile": "lib/actions/project.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/project.ts",
+        "targetFile": "lib/actions/project.ts",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/page.ts",
+        "targetFile": "lib/actions/testimonial.ts",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/faq.ts",
+        "targetFile": "lib/actions/faq.ts",
+        "lines": 9,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/faq.ts",
+        "targetFile": "lib/actions/faq.ts",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "lib/actions/faq.ts",
+        "targetFile": "lib/actions/project.ts",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "fonts/Montserrat/README.txt",
+        "targetFile": "fonts/Nunito-Sans/README.txt",
+        "lines": 42,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "fonts/Montserrat/OFL.txt",
+        "targetFile": "fonts/Nunito-Sans/OFL.txt",
+        "lines": 90,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "docs/03-design-system/typography.md",
+        "targetFile": "docs/06-reference/design-system.md",
+        "lines": 133,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/tutorial/code-block.tsx",
+        "targetFile": "components/tutorial/code-block.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/forms/feedback-form.tsx",
+        "targetFile": "components/forms/feedback-form.tsx",
+        "lines": 42,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/forms/feedback-form.tsx",
+        "targetFile": "components/forms/feedback-form.tsx",
+        "lines": 24,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/forms/contact-form.tsx",
+        "targetFile": "components/forms/contact-form.tsx",
+        "lines": 16,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 28,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 18,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 20,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 8,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 9,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/service-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 16,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 27,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/service-table.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/service-table.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 20,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-form.tsx",
+        "targetFile": "components/admin/service-form.tsx",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-form.tsx",
+        "targetFile": "components/admin/service-form.tsx",
+        "lines": 18,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 16,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-form.tsx",
+        "targetFile": "components/admin/service-form.tsx",
+        "lines": 11,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/project-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 23,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/page-table.tsx",
+        "targetFile": "components/admin/testimonial-table.tsx",
+        "lines": 10,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/page-content-form.tsx",
+        "targetFile": "components/admin/project-form.tsx",
+        "lines": 11,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/page-content-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 18,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/faq-table.tsx",
+        "targetFile": "components/admin/project-table.tsx",
+        "lines": 28,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/faq-table.tsx",
+        "targetFile": "components/admin/project-table.tsx",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/faq-table.tsx",
+        "targetFile": "components/admin/project-table.tsx",
+        "lines": 22,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/faq-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 6,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/faq-form.tsx",
+        "targetFile": "components/admin/testimonial-form.tsx",
+        "lines": 14,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "components/admin/component-status-list.tsx",
+        "targetFile": "components/admin/unused-components-list.tsx",
+        "lines": 7,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 13,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 28,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "types/supabase.ts",
+        "targetFile": "types/supabase.ts",
+        "lines": 12,
+        "tokens": 0
+      },
+      {
+        "sourceFile": "ROADMAP.md",
+        "targetFile": "reports/roadmap/roadmap-2025-05-02-072612.md",
+        "lines": 65,
+        "tokens": 0
+      }
+    ],
+    "componentStatus": [
+      {
+        "name": "AboutSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "AuditDashboard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "BlogCard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "BlogSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "CodeBlock",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "CodeDuplicationList",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ComponentStatusList",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ConnectSupabaseSteps",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ContactForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ContentSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "CtaSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "DeployButton",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "DesignProcess",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "EnvVarWarning",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FaqFilter",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FaqForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FaqItem",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FaqSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FaqTable",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FeaturedImage",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FeedbackForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FetchDataSteps",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "Footer",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "FormMessage",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "HeaderAuth",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "HealthScore",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "HeroSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "Icon",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ImplementationChecklist",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "MarkdownRenderer",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "Navigation",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "NextLogo",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "PageContentForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "PageTable",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProcessSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProjectCard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProjectForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProjectImage",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProjectsSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ProjectTable",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ServiceCard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ServiceForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ServicesSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "ServiceTable",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SignUpUserSteps",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SiteHeader",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SolutionsSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SpeakingCard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SubmitButton",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "SupabaseLogo",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "TestimonialCard",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "TestimonialForm",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "TestimonialsSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "TestimonialTable",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "TutorialStep",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "UnusedComponentsList",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      },
+      {
+        "name": "WhyUxSection",
+        "location": "Unknown",
+        "status": "Needs Review",
+        "usageCount": 0,
+        "notes": ""
+      }
+    ]
+  }
+}

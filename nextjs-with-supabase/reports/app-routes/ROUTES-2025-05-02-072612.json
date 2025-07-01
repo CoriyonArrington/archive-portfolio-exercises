@@ -1,0 +1,98 @@
+[
+  {
+    "route": "/",
+    "category": "main",
+    "title": "Homepage",
+    "description": "Main landing page."
+  },
+  {
+    "route": "/about",
+    "category": "main",
+    "title": "About Page",
+    "description": "Information about the studio/individual."
+  },
+  {
+    "route": "/services",
+    "category": "main",
+    "title": "Services Page",
+    "description": "Details about offered services."
+  },
+  {
+    "route": "/projects",
+    "category": "main",
+    "title": "Projects Listing",
+    "description": "Portfolio overview page."
+  },
+  {
+    "route": "/projects/[slug]",
+    "category": "main",
+    "title": "Project Detail",
+    "description": "Individual project case study page (dynamic)."
+  },
+  {
+    "route": "/contact",
+    "category": "main",
+    "title": "Contact Page",
+    "description": "Contact form and information."
+  },
+  {
+    "route": "/process",
+    "category": "resources",
+    "title": "Process Page",
+    "description": "Details about the work process."
+  },
+  {
+    "route": "/faq",
+    "category": "resources",
+    "title": "FAQ Page",
+    "description": "Frequently Asked Questions."
+  },
+  {
+    "route": "/feedback",
+    "category": "resources",
+    "title": "Feedback Page",
+    "description": "Page for submitting feedback."
+  },
+  {
+    "route": "/admin",
+    "category": "admin",
+    "title": "Admin Dashboard",
+    "description": "Main admin area (requires auth)."
+  },
+  {
+    "route": "/admin/pages",
+    "category": "admin",
+    "title": "Admin - Pages",
+    "description": "Manage static page content."
+  },
+  {
+    "route": "/admin/projects",
+    "category": "admin",
+    "title": "Admin - Projects",
+    "description": "Manage project entries."
+  },
+  {
+    "route": "/admin/services",
+    "category": "admin",
+    "title": "Admin - Services",
+    "description": "Manage service entries."
+  },
+  {
+    "route": "/admin/testimonials",
+    "category": "admin",
+    "title": "Admin - Testimonials",
+    "description": "Manage testimonials."
+  },
+  {
+    "route": "/admin/faqs",
+    "category": "admin",
+    "title": "Admin - FAQs",
+    "description": "Manage FAQ entries."
+  },
+  {
+    "route": "/_not-found",
+    "category": "misc",
+    "title": "Not Found",
+    "description": "Default 404 page."
+  }
+]

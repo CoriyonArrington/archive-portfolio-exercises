@@ -1,0 +1,8 @@
+Title	Description	DueDate
+Sprint 1 (Apr 28 - May 9)	Focus on initial styling/responsiveness pass (Home/About pages), migrate script tests, configure basic CI, build Card component.	2025-05-09
+Sprint 2 (May 12 - May 23)	Continue styling/responsiveness (Services/Projects/Contact), write foundational unit tests, set up CI pipeline, implement cache revalidation, add loading states.	2025-05-23
+Sprint 3 (May 26 - Jun 6)	Finalize core styling/responsiveness (Process/Project Detail), write foundational integration tests, implement Solutions pages, implement robust content rendering.	2025-06-06
+Sprint 4 (Jun 9 - Jun 20)	Implement Blog pages, start Playground features (Hub, Quiz?), continue testing efforts.	2025-06-20
+Sprint 5 (Jun 23 - Jul 4)	Continue Playground features (Health Tracker?), set up E2E testing framework.	2025-07-04
+Sprint 6 (Jul 7 - Jul 18)	Finalize Playground features (DBT Card?), perform thorough QA testing, integrate analytics.	2025-07-18
+MVP Launch	Target milestone for launching the core website features (Pages, Blog, Solutions, core Playground functionality). Includes deployment tasks and initial monitoring setup.	2025-07-31
