@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-171395181-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-171395181-2");
+    </script>
+
+    <!-- Device Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Coriyon Arrington | Portfolio</title>
+
+    <!-- Social Media -->
+    <meta property="og:title" content="Coriyon Arrington's Portfolio" />
+    <meta property="og:image" content="../images/website-preview.png" />
+    <meta
+      property="og:description"
+      content="UX Designer based in Austin who loves clean, elegant, and practical designs."
+    />
+    <meta property="og:url" content="https://coriyon.com/" />
+
+    <!-- Favicons -->
+    <link href="../images/avatar.png" rel="icon" />
+    <link href="../images/avatar.png" rel="apple-touch-icon" />
+
+    <!-- Canonical Links -->
+    <link rel="canonical" href="../about" />
+    <link rel="canonical" href="../index.html#work" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- this is the page container -->
+    <div id="case-study" class="page-container">
+      <header id="main-nav" class="main-nav">
+        <!-- main logo to go back to home page -->
+        <a href="/" class="logo"
+          ><img src="../images/logo.svg" alt="avatar"
+        /></a>
+        <!-- this creates the menu and close icon -->
+        <div id="menu-icon-container" class="menu-icon-container">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+        <!-- this holds the nav overlay -->
+        <div id="nav-overlay" class="overlay">
+          <nav class="overlay-content">
+            <a href="../#work" onclick="anchorLink()">Work</a>
+            <a
+              href="https://drive.google.com/file/d/1RXZhrrxtsn3PHWiKyGr_8ga8qAIOny_9/view?usp=sharing"
+              target="_blank"
+              >Resume</a
+            >
+            <a href="../about" onclick="anchorLink()">About</a>
+            <a href="#contact" onclick="anchorLink()">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <header id="project-nav">
+        <a
+          href="javascript:void(0);"
+          id="sort-icon"
+          class="sort-icon"
+          aria-label="sort button"
+          tabindex="0"
+        >
+          <span class="fas fa-sort fa-2x"></span>
+        </a>
+        <div id="project-nav-overlay" class="overlay">
+          <nav class="overlay-content">
+            <a href="#summary" class="project-item" onclick="anchorLink()"
+              >Summary</a
+            >
+            <a
+              href="#discovery-research"
+              class="project-item"
+              onclick="anchorLink()"
+              >User Research</a
+            >
+            <a
+              href="#information-architecture"
+              class="project-item"
+              onclick="anchorLink()"
+              >Architecture</a
+            >
+            <a href="#visual-design" class="project-item" onclick="anchorLink()"
+              >Visual Design</a
+            >
+            <a
+              href="#prototype-solution"
+              class="project-item"
+              onclick="anchorLink()"
+              >Prototype</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- progress bar -->
+        <div class="progress">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+
+        <!-- hero -->
+        <div class="hero">
+          <section class="work-example">
+            <h2>FindBlack</h2>
+            <h4>
+              FindBlack allows users to easily find, save, and share black-owned
+              businesses.
+            </h4>
+            <img
+              src="../images/findblack-example-1.png"
+              alt="app screenshots"
+            />
+            <a
+              href="https://www.figma.com/proto/AP3NYLkNzGm00SJZg4KlMS/Capstone-Project?node-id=221%3A2560&viewport=1134%2C701%2C0.21786345541477203&scaling=scale-down&hotspot-hints=0&hide-ui=1"
+              target="_blank"
+              aria-label="prototype"
+            >
+              <button type="button" class="primary">View Prototype</button>
+            </a>
+          </section>
+        </div>
+
+        <!-- summary specs -->
+        <section class="summary-specs">
+          <div>
+            <h3>Deliverables</h3>
+            <ul>
+              <li>User Surveys</li>
+              <li>User Personas</li>
+              <li>Competitive Analysis</li>
+              <li>Brand Identity</li>
+              <li>User Stories & Flows</li>
+              <li>Wireframes</li>
+              <li>Usability Testing</li>
+              <li>Mockups</li>
+              <li>Prototypes</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Role</h3>
+            <ul>
+              <li>UX Design</li>
+              <li>Visual Design</li>
+              <li>Brand & Identity</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Specifications</h3>
+            <ul>
+              <li>5 weeks</li>
+              <li>Figma</li>
+              <li>Google Forms</li>
+              <li>Xtensio</li>
+              <li>Creately</li>
+              <li>Useberry</li>
+              <li>Usability Hub</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- summary -->
+        <section id="summary">
+          <!-- insights -->
+          <section class="project">
+            <h3>Insights</h3>
+            <p>
+              In the aftermath of George Floyd, people have wanted to support
+              black-owned businesses. However, there are not many apps or tools
+              that help connect people to black-owned businesses, products, or
+              services. There are a few problems that exist though.
+            </p>
+          </section>
+
+          <!-- problem -->
+          <section class="project">
+            <h3>Problems</h3>
+            <ol>
+              <li>There are tons of black businesses that are hard to find.</li>
+              <li>
+                There is no way to verify that it is actually black-owned.
+              </li>
+              <li>
+                The apps that are available are geared mostly towards
+                restaurants.
+              </li>
+              <li>
+                There is not a place or way to easily recommend black
+                businesses.
+              </li>
+            </ol>
+          </section>
+
+          <!-- solutions -->
+          <section class="project">
+            <h3>Solutions</h3>
+            <ol>
+              <li>
+                Create a directory that is available for every type of business
+                available.
+              </li>
+              <li>
+                Showcase a way to show that the business is legitimately
+                black-owned.
+              </li>
+              <li>
+                Provide a way for the users to recommend black businesses be
+                added.
+              </li>
+            </ol>
+          </section>
+
+          <div class="project-example">
+            <img
+              src="../images/findblack-example-2.png"
+              alt="app screenshots"
+            />
+          </div>
+          <a
+            href="https://www.figma.com/proto/AP3NYLkNzGm00SJZg4KlMS/Capstone-Project?node-id=221%3A2560&viewport=1134%2C701%2C0.21786345541477203&scaling=scale-down&hotspot-hints=0&hide-ui=1"
+            target="_blank"
+            aria-label="prototype"
+          >
+            <button type="button" class="primary">View Prototype</button>
+          </a>
+        </section>
+
+        <!-- discovery & research -->
+        <section id="discovery-research">
+          <h2>Discovery & Research</h2>
+
+          <!-- user survey -->
+          <section class="project">
+            <h3>User Survey</h3>
+            <p>
+              I decided to start out the process by creating a user survey on
+              Google Forms because I wanted to test my assumptions and see if
+              people were having an experience similar to mine. When George
+              Floyd was killed, I found myself wanting to support black
+              businesses even more than usual. There were tons of "check out
+              these" lists available but finding a black business nearby was
+              difficult to say the least. So, the user survey helped me to get
+              insight.
+            </p>
+            <p>
+              It showed me that there was a need for people to find black-owned
+              businesses and there is an opportunity to improve the experience.
+              All survey results below are out of 65 participants.
+            </p>
+            <div class="project-example survey-highlights col2">
+              <div>
+                <h3>95%</h3>
+                <p>
+                  of people would use a tool designed primarily for finding
+                  black-owned businesses.
+                </p>
+              </div>
+              <div>
+                <h3>78%</h3>
+                <p>
+                  of those who searched for a black business before said they
+                  search at least two times a month.
+                </p>
+              </div>
+              <div>
+                <h3>58%</h3>
+                <p>
+                  gave a rating of 1 or 2 out of 5 with 1 being very difficult
+                  to find.
+                </p>
+              </div>
+              <div>
+                <h3>87%</h3>
+                <p>Searching by business type was the top requested feature.</p>
+              </div>
+            </div>
+            <a
+              href="https://docs.google.com/document/d/1__Q_Ik1gd7xruuSp9oOc4BBIRVngM4YtP43vdv7EG_c/edit?usp=sharing"
+              target="_blank"
+              aria-label="survey analysis"
+            >
+              <button type="button" class="primary">View Analysis</button>
+            </a>
+          </section>
+
+          <!-- competitive analysis -->
+          <section class="project">
+            <h3>Competitive Analysis</h3>
+            <p>
+              The competitive analysis was crucial to the process. To my
+              surprise, there were a lot more out there than I was expecting.
+              Even as I continued throughout the project I would find more. I
+              noticed that most of them were for finding restaurants though.
+              Even still, the ones that were centered around finding any type of
+              business were usually not designed very well or had many bugs. I
+              was able to narrow down my competitors to the two below.
+            </p>
+            <p>
+              This was important because it gave me a baseline to work from. I'm
+              a big advocate for not reinventing the wheel and working hard to
+              understand how to improve what's already out there. Below are a
+              few product shots from the competitors that show some common
+              similarities such as a tab that has the main functions, a search
+              bar, and business cards showing the business info. Going into the
+              project, I knew I would test and incorporate these aspects.
+            </p>
+            <div class="project-example col2">
+              <section class="competitors">
+                <img
+                  src="../images/iamblack.png"
+                  class="avatar"
+                  alt="I Am Black Business"
+                />
+                <h4>I Am Black Business</h4>
+                <h4>Pros</h4>
+                <ul>
+                  <li>Mobile and web app available</li>
+                  <li>Anyone can list their business</li>
+                  <li>Almost 8,000 businesses listed</li>
+                </ul>
+                <img
+                  src="../images/iamblack-app.png"
+                  alt="I Am Black Business Product"
+                />
+                <h4>Cons</h4>
+                <ul>
+                  <li>Not updated regularly</li>
+                  <li>Broken user interface</li>
+                  <li>Costs to unlock certain features</li>
+                </ul>
+              </section>
+              <section class="competitors">
+                <img
+                  src="../images/blackwallstreet.png"
+                  class="avatar"
+                  alt="Official Black Wall Street"
+                />
+                <h4>Official Black Wall Street</h4>
+                <h4>Pros</h4>
+                <ul>
+                  <li>Search by category and location</li>
+                  <li>Get notified of nearby businesses</li>
+                  <li>Mobile and web available for use</li>
+                </ul>
+                <img
+                  src="../images/blackwallstreet-app.png"
+                  alt="Official Black Wall Street Product"
+                />
+                <h4>Cons</h4>
+                <ul>
+                  <li>Several critical bugs</li>
+                  <li>Web app is not user friendly</li>
+                  <li>Cluttered with many features</li>
+                </ul>
+              </section>
+            </div>
+            <a
+              href="https://coriyonarrington.xtensio.com/pbrs8txg"
+              target="_blank"
+              aria-label="competitive analysis"
+            >
+              <button type="button" class="primary">View Analysis</button>
+            </a>
+          </section>
+
+          <!-- user personas -->
+          <section class="project">
+            <h3>User Personas</h3>
+            <p>
+              Based on the survey results, there were two major personas that
+              were identified. I was shocked to see that<span>
+                out of all 65 participants 89% were women.
+              </span>
+              I was expecting it to be majority women but not by that much. It
+              showed me that the app would be primarily designed for them.
+            </p>
+            <div class="project-example col2">
+              <section class="persona">
+                <img src="../images/persona-jonesha.png" alt="user persona" />
+                <h4>Jonesha</h4>
+                <h5>24 / Social Media Manager</h5>
+                <h4>Goals</h4>
+                <p>
+                  As a Social Media Manager and black woman, I feel it's my duty
+                  to make sure I'm spreading awareness with accurate and useful
+                  information. I would like there to be a more concise method of
+                  finding black-owned businesses so I can help spread the word
+                  effectively.
+                </p>
+                <p>
+                  We just need an organized way of seeing things. Instead of
+                  word of mouth or asking online Facebook groups.
+                </p>
+                <h4>Frustrations</h4>
+                <p>
+                  There is no streamlined way of finding black owned businesses;
+                  many of the websites/apps I have tried are either limited to a
+                  certain region or there is not much information on there.
+                </p>
+              </section>
+              <section class="persona">
+                <img src="../images/persona-jessie.png" alt="user persona" />
+                <h4>Jessie</h4>
+                <h5>22 / Content Specialist</h5>
+                <h4>Goals</h4>
+                <p>
+                  I want to do my part and help support the black community. One
+                  of the easiest ways I know to do that is by buying their
+                  products. Personally, I would use an app to find black-owned
+                  businesses so I can buy jewelry and clothes. It'll help me
+                  curate content to showcase their work!
+                </p>
+                <p>
+                  The ability to go to one place instead of going to multiple
+                  pages to find a good brand or business to purchase from.
+                </p>
+                <h4>Frustrations</h4>
+                <p>
+                  It's usually a lot of "20 BOBs you HAVE to know about" lists
+                  which feels like information overload and it's often the same
+                  businesses.
+                </p>
+              </section>
+            </div>
+          </section>
+        </section>
+
+        <!-- information architecture -->
+        <section id="information-architecture">
+          <h2>Information Architecture</h2>
+
+          <!-- user stories and flows -->
+          <section class="project">
+            <h3>User Stories and Flows</h3>
+            <p>
+              Now that it's been confirmed that there is a need and the audience
+              has been determined it's a good time to create user stories to
+              highlight the core features of the product.
+            </p>
+            <ol>
+              <li>
+                As a new user I want to search for businesses by keywords.
+              </li>
+              <li>
+                As a new user I want to get directions to nearby black
+                businesses.
+              </li>
+              <div class="project-example user-flows">
+                <img
+                  src="../images/findblack-user-flows-1.png"
+                  alt="user-flows"
+                />
+              </div>
+              <li>
+                As a returning user I want to recommend a business get added.
+              </li>
+              <li>
+                As a returning user I want to add or view favorite businesses.
+              </li>
+              <div class="project-example user-flows">
+                <img
+                  src="../images/findblack-user-flows-2.png"
+                  alt="user-flows"
+                />
+              </div>
+            </ol>
+            <p>
+              The user stories were then converted into user flows using
+              Creately to illustrate how the user would interact with the
+              product and accomplish those goals.
+            </p>
+
+            <a
+              href="https://app.creately.com/diagram/mNN6qXlDdX9/"
+              target="_blank"
+              aria-label="user flows"
+            >
+              <button type="button" class="primary">View Flows</button>
+            </a>
+          </section>
+
+          <!-- digital wireframes -->
+          <section class="project">
+            <h3>Digital Wireframes</h3>
+            <p>
+              Once the user flows were complete, it was time to hit the drawing
+              board. The survey results showed me which features people would
+              like to see. Additionally, and most importantly, it showed me
+              which ones they would use most often. So, I decided to start
+              working on sketches with those priorities in mind.
+            </p>
+            <p>
+              People mentioned that they would use a search feature the most.
+              So, I focused on ease-of-use with the search functionality,
+              showcasing it early on in the new user flow and at the top of
+              every screen. Secondly, I made sure there were several categories
+              for them to choose to search from as well. These choices can be
+              seen in the design below.
+            </p>
+            <p>
+              Lastly, I took a note from the competitors shown earlier and used
+              a tab bar that had the core features: a home screen, search
+              button, favorite option, and menu for them to do everything else.
+            </p>
+            <div class="project-example">
+              <img
+                src="../images/findblack-digital-wireframes.png"
+                alt="digital wireframes"
+              />
+            </div>
+            <a
+              href="https://www.figma.com/proto/AP3NYLkNzGm00SJZg4KlMS/Capstone-Project?node-id=520%3A10783&viewport=113%2C262%2C0.28481119871139526&scaling=scale-down&hide-ui=1"
+              target="_blank"
+              aria-label="digital wireframe prototype"
+            >
+              <button type="button" class="primary">Wireframe Prototype</button>
+            </a>
+          </section>
+        </section>
+
+        <!-- visual design -->
+        <section id="visual-design">
+          <h2>Visual Design</h2>
+
+          <!-- brand characteristics -->
+          <section class="project">
+            <h3>Brand Characteristics</h3>
+            <p>
+              FindBlack was inspired by George Floyd and the different shades of
+              black people. The goal is to have the users perceive the product
+              as inclusive and easy to use.
+            </p>
+            <div class="project-example">
+              <img src="../images/findblack-moodboard.png" alt="mood board" />
+            </div>
+          </section>
+
+          <!-- color palette -->
+          <section class="project">
+            <h3>Color</h3>
+            <p>
+              Sinopia #C04F27 Cultured #F5F5F5, the top two colors were chosen
+              for FindBlack. Sinopia is a rich brown-red color that evokes a
+              sense of strength and reliability. Given how users perceive other
+              products as not having enough information or being reliable this
+              was important. Cultured is a term used in the black community that
+              means well refined and tasteful. It's also an off-white that
+              conveys simplicity. Lastly, it complements Sinopia well. For these
+              reasons, it was chosen as the second main color of FindBlack.
+            </p>
+            <div class="project-example">
+              <img
+                src="../images/findblack-color-palette.png"
+                alt="color palette"
+              />
+            </div>
+          </section>
+
+          <!-- logo design and process -->
+          <section class="project">
+            <h3>Logo Design</h3>
+            <p>
+              The logo was designed with the well-known resist fist. It's a
+              staple and was used because it stands out.
+            </p>
+            <div class="project-example col3">
+              <img src="../images/findblack-logo-1.png" alt="logo example" />
+              <img src="../images/findblack-logo-2.png" alt="logo example" />
+              <img src="../images/findblack-logo-3.png" alt="logo example" />
+            </div>
+            <a
+              href="https://www.figma.com/proto/AP3NYLkNzGm00SJZg4KlMS/Capstone-Project?node-id=678%3A17099&viewport=255%2C120%2C0.07239805907011032&scaling=scale-down-width&hotspot-hints=0&hide-ui=1"
+              target="_blank"
+              aria-label="digital brand style guide"
+            >
+              <button type="button" class="primary">View Style Guide</button>
+            </a>
+          </section>
+        </section>
+
+        <!-- prototype and conclusion -->
+        <section id="prototype-conclusion">
+          <!-- iterations -->
+          <section class="project">
+            <h2>Iterations</h2>
+            <p>
+              FindBlack went through a multiple rounds of user testing. The user
+              testing led the design choices. Below are a few examples
+              showcasing the iterations it went through and changes that were
+              made.
+            </p>
+            <div class="project-example">
+              <img
+                src="../images/findblack-iteration-1.png"
+                alt="feedback example"
+              />
+            </div>
+            <p>
+              Going into the project, I wanted to put an emphasis on usability
+              and one of the choices I made was putting a skip button early on
+              in the sign up flow. This allows the user to bypass the onboarding
+              and immediately experience the app. However, it was brought to my
+              attention that the skip button was hard to see. So, I redesigned
+              it and included it near the join and sign in button instead.
+              Lastly, I changed it from "skip" to "browse as guest" to make the
+              action more clear.
+            </p>
+            <div class="project-example">
+              <img
+                src="../images/findblack-iteration-2.png"
+                alt="feedback example"
+              />
+            </div>
+            <p>
+              In the example above, I received tons of great feedback about the
+              business page.
+            </p>
+            <p>
+              Red - It was mentioned that there were too many "cards" and the
+              business page was too long. Coupled with this was the ability to
+              get to the contact information sooner. So, I redesigned to remove
+              the contact card and instead put the contact icons at the top of
+              the page, changing its importance and saving space.
+            </p>
+            <p>
+              Yellow - User feedback showed that there was too much information
+              going on in the initial business info section. To change this, I
+              added the information to the photo that was showcased and used
+              Auto Layout so that if more icons needed to be added it could
+              easily be done while maintaining the spacing.
+            </p>
+            <p>
+              Purple - The about section was important because users wanted to
+              see the business was legitimately black-owned. One easy way to
+              accomplish this is to showcase the about section and show the
+              owners. Feedback showed that the read more was hard to see and
+              users were not sure how to expand it. So, I changed it nu adding
+              an icon instead of the ellipses and it was much more clear.
+            </p>
+          </section>
+
+          <!-- prototype -->
+          <section id="prototype-solution" class="project">
+            <h2>Prototype</h2>
+            <p>
+              Below is the current version included changes based on user
+              feedback. There are more changes coming down the pipeline when
+              additional user testing is complete.
+            </p>
+            <div class="project-example">
+              <video
+                src="../videos/findblack-hifi.mp4"
+                playsinline=""
+                preload="none"
+                loop=""
+                autoplay=""
+                muted=""
+              ></video>
+            </div>
+          </section>
+
+          <!-- conclusion -->
+          <section class="project">
+            <h2>The Conclusion</h2>
+            <p>
+              There are still aspects I plan to continue to improve and refine
+              with more time. For example, I received some recent user feedback
+              from a Product Designer that my home page should be more of a
+              search screen. Initial user feedback did not showcase this but
+              it's an interesting point from a product perspective. I plan on
+              continuing further iterations with this in mind.
+            </p>
+            <h3>What I learned</h3>
+            <p>
+              One of the most challenging parts of the project was making
+              designs that were flexible. For example, I wanted to make sure
+              that whatever device it was viewed on that it would look as
+              intended. I solved this by learning how to use constraints and
+              auto layout effectively. Doing so helped me to create more
+              responsive components which led to better overall design and
+              structure.
+            </p>
+            <p>
+              I’m very happy and proud of the work I’ve done. I believe I have
+              designed for most scenarios and have the core design work done.
+              I’m also very glad that I learned about auto layout and
+              constraints more in-depth as it will much be easier to update and
+              refine the future iterations. I’m looking forward to the next set
+              of improvements so please check back soon!
+            </p>
+            <a href="/work/eclips-storage.html">
+              <button type="button" class="primary">
+                Next Project - Eclips Storage
+              </button>
+            </a>
+          </section>
+        </section>
+
+        <!-- this section holds the contact me info -->
+        <section id="contact" class="contact col2">
+          <h1>Please, say hi.</h1>
+          <h4>
+            Thank you for stopping by. If you’d like to chat or work on
+            something - let’s connect 👇🏾
+          </h4>
+          <form action="https://formspree.io/mwkweprv" method="POST">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              data-rule="email"
+              data-msg="Please enter a valid email"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              data-rule="minlen:4"
+              data-msg="Please enter at least 8 characters of subject"
+            />
+            <textarea
+              name="message"
+              rows="6"
+              data-rule="required"
+              data-msg="Please write something for us"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="primary">Send Message</button>
+          </form>
+
+          <div id="contact-me" class="contact-me">
+            <ul>
+              <li>
+                <a
+                  href="tel:+15123640962"
+                  onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+                  ><span class="fas fa-phone-alt fa-2x"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/coriyonarrington/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><span class="fab fa-linkedin fa-2x"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/CoriyonArrington"
+                  target="_blank"
+                  aria-label="GitHub"
+                  ><span class="fab fa-github fa-2x"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/coriyon"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><span class="fab fa-facebook-square fa-2x"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/TheCoriSmoove"
+                  target="_blank"
+                  aria-label="Twitter"
+                  ><span class="fab fa-twitter-square fa-2x"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/coriyonnn/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  ><span class="fab fa-instagram fa-2x"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span class="fas fa-copyright"></span>
+        <h5>2020 Designed and Developed by Coriyon</h5>
+      </footer>
+    </div>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/project-menu.js"></script>
+    <script src="../scripts/progress.js"></script>
+    <script src="../scripts/zenscroll-min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/58e13ba0ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/cursor.js"></script>
+  </body>
+</html>

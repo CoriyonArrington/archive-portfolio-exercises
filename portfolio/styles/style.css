@@ -1,0 +1,866 @@
+html {
+  background-color: #000;
+  font-size: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+::selection {
+  background: #65c9ff;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+  # The Typography
+  --------------------------------------------------------------*/
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(/fonts/nunitosans-regular.ttf);
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  src: url(/fonts/nunitosans-semibold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: lighter;
+  src: url(/fonts/montserrat-light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(/fonts/nunitosans-regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url(/fonts/montserrat-bold.ttf);
+}
+
+h1 {
+  font-size: calc(3.2rem + 1.6vw);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: calc(1rem + 0.6vw);
+  font-weight: lighter;
+}
+
+h5 {
+  font-weight: lighter;
+}
+
+li,
+ol,
+p,
+ul {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  list-style-position: inside;
+}
+
+a,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+img,
+li,
+ol,
+p,
+ul,
+video {
+  /* padding / margin is subject to change */
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+}
+
+/*--------------------------------------------------------------
+  # The Atoms
+  --------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+/* Styles the button and input elements */
+button {
+  background-color: transparent;
+  border: 1px solid #ffcd00;
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.5rem 2.5rem;
+}
+
+button,
+input,
+textarea {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: #e6b900;
+  box-shadow: none;
+  color: #000000;
+  cursor: pointer;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.primary {
+  background-color: #ffcd00;
+  box-shadow: rgba(213, 179, 46, 0.32) 0px 0px 24px 8px;
+  color: #000;
+}
+
+.secondary {
+  background-color: #000000;
+  box-shadow: rgba(49, 49, 49, 0.32) 0px 0px 24px 8px;
+  color: #fff;
+}
+
+/* Styles the font awesome icons elements */
+span.fab,
+span.fac,
+span.far,
+span.fas {
+  color: #adacaf;
+}
+
+span.fab:hover,
+span.fac:hover,
+span.far:hover,
+span.fas:hover {
+  color: #ffcd00;
+}
+
+/*--------------------------------------------------------------
+  # The Molecules
+  --------------------------------------------------------------*/
+/* Styles the main container */
+.page-container {
+  margin: 0 auto;
+  /* padding / margin is subject to change */
+  padding: 0 4%;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  /* padding / margin is subject to change */
+  margin: 1rem auto;
+}
+
+section a,
+section img,
+section video {
+  align-self: center;
+}
+
+/* Styles the main navigation header */
+.main-nav {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  left: 0;
+  /* padding / margin is subject to change but must match page-container padding */
+  padding: 0 4%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8888;
+}
+
+.main-nav.is-filled {
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.main-nav.is-hidden {
+  transform: translateY(-300%);
+  transition: 2s ease-out;
+}
+
+.main-nav.is-transparent {
+  background-color: transparent;
+  transition: 2s ease-out;
+}
+
+.main-nav.is-visible {
+  transition: 1s ease-in;
+}
+
+.logo {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  z-index: 8888;
+}
+
+.logo img {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-icon-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: #fff;
+  color: #fff;
+  height: 2px;
+  transition: 0.4s ease-in;
+  width: 32px;
+  z-index: 8888;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.4s ease-in;
+  width: 0;
+  z-index: 7777;
+}
+
+.overlay-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+}
+
+.overlay-content a {
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.overlay-content a:hover {
+  color: #ffcd00;
+}
+
+.overlay.on {
+  background-color: #000;
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Styles the home hero section */
+.bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/about-me.png");
+  background-position: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero-content {
+  justify-content: space-evenly;
+  /* padding / margin is subject to change but must be equal to or greater than nav height */
+  margin-top: 80px;
+  width: 100%;
+  z-index: 16;
+}
+
+.hero::after {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero #contact-me {
+  display: none;
+}
+
+/* Styles the work section */
+.work-example-video {
+  width: 50%;
+}
+
+/* Styles the contact section */
+.contact {
+  border-top: 1px solid #adacaf;
+}
+
+.contact h1 {
+  width: 70%;
+}
+
+.contact h1,
+.contact h4 {
+  /* padding / margin is subject to change */
+  margin: 1rem 0;
+}
+
+.contact form button {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.contact-me {
+  display: flex;
+  /* padding / margin is subject to change */
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.contact-me ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.contact-me li {
+  font-size: 0.8rem;
+}
+
+.contact-me a {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 1px solid #adacaf;
+  border-radius: 4px;
+  color: #adacaf;
+  height: auto;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  overflow: visible;
+  resize: none;
+  width: 100%;
+}
+
+input:focus-within,
+textarea:focus-within {
+  background-color: #ffffff;
+  border: 1px solid #ffcd00;
+  color: #000000;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Styles the footer section */
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 2rem 0;
+}
+
+footer h5 {
+  margin: 0;
+}
+
+/* Styles the progress bar */
+.progress {
+  background-color: #000;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.progress-container {
+  background: #000000;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.progress-bar {
+  background: #fff9e0;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  width: 0%;
+}
+
+/* Styles the about page */
+#about-page .hero-content h1 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-video {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  object-fit: cover;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 8;
+}
+
+.avatar {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 8rem;
+}
+
+/* Styles the project page */
+#case-study .hero::after {
+  display: none;
+}
+
+#case-study .work-example {
+  margin-top: 80px;
+}
+
+.project {
+  /* padding / margin is subject to change */
+  margin: 1rem auto 0;
+  width: 100%;
+}
+
+.project li {
+  padding: 0;
+}
+
+.project a,
+.project img {
+  margin: 1rem 0;
+}
+
+.project-example video {
+  max-width: 100%;
+}
+
+.summary-specs {
+  text-align: center;
+}
+
+.summary-specs li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-example {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row img {
+  max-width: 50%;
+}
+
+.user-flows {
+  display: none;
+}
+
+.competitors,
+.persona {
+  align-items: center;
+  border: 1px solid #242424;
+  box-shadow: rgba(36, 36, 36, 0.32) 0px 0px 8px 4px;
+  padding: 0 0.5rem;
+}
+
+.persona h4:nth-child(n + 4) {
+  color: #ffcd00;
+}
+
+.competitors h4:nth-child(n + 3) {
+  color: #ffcd00;
+}
+
+.sort-icon {
+  align-items: center;
+  background-color: #ffc900;
+  border-radius: 50rem;
+  bottom: 2rem;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 1rem;
+  width: 48px;
+  z-index: 6666;
+}
+
+.sort-icon span:hover {
+  color: #000;
+}
+
+.sort-icon span {
+  color: #fff9e0;
+}
+
+.survey-highlights,
+.survey-highlights div {
+  padding: 0;
+}
+
+.survey-highlights h3 {
+  color: #ffc900;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    max-width: 60ch;
+  }
+
+  /* Styles the main navigation header */
+  .menu-icon-container {
+    height: 0;
+    position: fixed;
+    right: 30%;
+    top: 30%;
+  }
+
+  .menu-icon-container.display {
+    height: 40px;
+  }
+
+  #main-nav .overlay {
+    align-items: flex-end;
+    height: auto;
+    position: initial;
+    width: 100%;
+  }
+
+  #main-nav .overlay-content {
+    flex-direction: row;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+  }
+
+  #main-nav .overlay-content a {
+    font-size: 1rem;
+  }
+
+  /* Styles the home page */
+  .hero-content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .hero-content {
+    align-items: center;
+    display: grid;
+  }
+
+  .hero-content h1,
+  .hero-content h4 {
+    justify-content: start;
+    grid-column: 1 / span 3;
+    width: 50%;
+  }
+
+  .cta {
+    justify-content: left;
+  }
+
+  .hero-content .cta {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .hero #contact-me {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .work-example {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-example h2 {
+    align-self: end;
+  }
+
+  .work-example h4 {
+    width: 88%;
+  }
+
+  .work-example a {
+    align-self: start;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .work-example video,
+  .work-example img {
+    grid-row: span 3 / 4;
+    justify-self: center;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .contact-me ul {
+    justify-content: initial;
+    width: auto;
+  }
+
+  .contact h4 {
+    width: 70%;
+  }
+
+  .contact form {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    justify-self: center;
+    width: 80%;
+  }
+
+  /* Styles the about page */
+  #about-page .hero::after {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  #about-page .cta {
+    justify-content: center;
+    width: 50%;
+  }
+  .about-content {
+    /* padding / margin is subject to change */
+    margin: 2rem 0 auto;
+    width: 80%;
+  }
+
+  .about-content h2 {
+    width: 64%;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  /* Styles the project pages */
+  #case-study .work-example {
+    min-height: 70vh;
+  }
+
+  #summary,
+  .summary-specs,
+  #discovery-research,
+  #information-architecture,
+  #visual-design,
+  #prototype-conclusion {
+    /* padding / margin is subject to change */
+    margin: 1rem auto 0;
+    width: 80%;
+  }
+
+  .project-example img,
+  .project-example video {
+    max-width: 70%;
+  }
+
+  .col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .col3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .summary-specs {
+    border-bottom: 1px solid #adacaf;
+    border-top: 1px solid #adacaf;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .competitors,
+  .persona {
+    width: 90%;
+  }
+
+  .competitors img {
+    max-width: 100%;
+  }
+
+  .sort-icon {
+    bottom: 2rem;
+    right: 4rem;
+  }
+
+  .survey-highlights {
+    justify-items: start;
+  }
+
+  .survey-highlights p {
+    width: 80%;
+  }
+
+  .user-flows {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Styles the cursor */
+  * {
+    cursor: none !important;
+  }
+
+  .cursor-dot,
+  .cursor-dot-outline {
+    border-radius: 50%;
+    left: 50%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .cursor-dot {
+    background-color: #e6b900;
+    height: 12px;
+    mix-blend-mode: difference;
+    width: 12px;
+    z-index: 9999;
+  }
+
+  .cursor-dot-outline {
+    background-color: #ffffff;
+    display: none;
+    height: 16px;
+    width: 16px;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .page-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .page-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .page-container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .page-container {
+    width: 50%;
+  }
+}
